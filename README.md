@@ -6,5 +6,5 @@
 - [mybatis](https://mybatis.net.cn/)
 - mysql
 - [bootstrap](https://v3.bootcss.com/)
-- [git](https://fanchuan77.github.io/2022/05/07/Git%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/)
+- [git](https://www.runoob.com/manual/git-guide/)
 - maven
