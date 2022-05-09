@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
     <!--  Jquery   -->
     <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 /static/-->
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入）/static/-->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="js/bootstrap.min.js"></script>
@@ -36,16 +37,16 @@
                 <button type="submit" class="btn btn-default">搜索</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-<!--       https://gitee.com/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code         -->
-<!--       https://github.com/login/oauth/authorize?client_id=97837cb52c1228e8321c&redirect_uri=http://localhost:80/callback?scope=user&state=1         -->
-                <li><a href="https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1">登录</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我<span class="caret"></span></a>
+                <li class="dropdown" th:if="${session.user != null}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" th:text="${session.user.getName()}"><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">信息中心</a></li>
                         <li><a href="#">个人资料</a></li>
                         <li><a href="#">退出登录</a></li>
                     </ul>
+                </li>
+                <li th:unless="${session.user != null}">
+                    <a href="https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1">登录</a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
