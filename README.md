@@ -5,6 +5,7 @@
 - [spring boot](https://felord.cn/_doc/_springboot/2.1.5.RELEASE/_book/)
 - [mybatis](https://mybatis.net.cn/)
 - mysql
+- thymeleaf
 - [bootstrap](https://v3.bootcss.com/)
 - [git](https://www.runoob.com/manual/git-guide/)
 - maven
