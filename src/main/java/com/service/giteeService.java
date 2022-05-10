@@ -14,7 +14,6 @@ public class giteeService {
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.create(mediaType, JSON.toJSONString(accessToken));
-        // https://gitee.com/oauth/token?grant_type=authorization_code&code={code}&client_id={client_id}&redirect_uri={redirect_uri}&client_secret={client_secret}
         Request request = new Request.Builder()
                 .url("https://gitee.com/oauth/token?grant_type=authorization_code"
                         +"&code="+accessToken.getCode()
@@ -37,8 +36,6 @@ public class giteeService {
 
     public giteeUser getUser(String Token){
         OkHttpClient client = new OkHttpClient();
-        // https://gitee.com/oauth/token?grant_type=refresh_token&refresh_token={refresh_token}
-        // https://api.github.com/user/repos
         Request request = new Request.Builder()
                 .url("https://gitee.com/api/v5/user?access_token="+Token)
                 .build();
