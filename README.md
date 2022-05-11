@@ -9,3 +9,8 @@
 - [bootstrap](https://v3.bootcss.com/)
 - [git](https://www.runoob.com/manual/git-guide/)
 - maven
+---
+###实现功能
+- [x] gitee验证登录
+- [] 发布文章至后端
+- [] 
