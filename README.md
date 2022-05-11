@@ -1,4 +1,4 @@
-## study community
+## Study Community
 参考学习[码问社区](https://github.com/codedrinker/community)
 ## 技术栈
 - spring mvc
@@ -10,6 +10,6 @@
 - [git](https://www.runoob.com/manual/git-guide/)
 - maven
 ---
-###实现功能
+## 实现功能
 - [x] gitee验证登录 `2022.5.10`
 - [x] 发布问题至数据库 `2022.5.11`
