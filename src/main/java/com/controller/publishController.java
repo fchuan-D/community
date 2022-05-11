@@ -3,7 +3,7 @@
 package com.controller;
 
 import com.enity.Question;
-import com.enity.user;
+import com.enity.User;
 import com.mapper.questionMapper;
 import com.mapper.userMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +50,7 @@ public class publishController {
             return "publish";
         }
         Question question=new Question();
-        user user = null;
+        User user = null;
         Cookie[] cookies = request.getCookies();
         // cookies可能为空
         if (cookies!=null && cookies.length!=0) {

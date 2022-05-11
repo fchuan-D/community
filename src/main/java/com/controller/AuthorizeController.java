@@ -4,7 +4,7 @@ package com.controller;
 
 import com.enity.accessToken;
 import com.enity.giteeUser;
-import com.enity.user;
+import com.enity.User;
 import com.mapper.userMapper;
 import com.service.giteeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +44,7 @@ public class AuthorizeController {
         String Token = giteeService.getAccessToken(accessToken);
         giteeUser giteeUser = giteeService.getUser(Token);
         if (giteeUser!=null){
-            user user = new user();
+            User user = new User();
             String token = UUID.randomUUID().toString();
             user.setName(giteeUser.getName());
             user.setToken(token);

@@ -5,7 +5,7 @@ package com.enity;
 import lombok.Data;
 
 @Data
-public class user {
+public class User {
     private Integer id;
     private String name;
     private String accountId;
