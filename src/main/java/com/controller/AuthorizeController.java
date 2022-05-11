@@ -51,8 +51,10 @@ public class AuthorizeController {
             user.setAccountId(String.valueOf(giteeUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
+            user.setAvatarUrl(giteeUser.getAvatarUrl());
 
             userMapper.insert(user);
+            // 发送token给浏览器
             response.addCookie(new Cookie("token",token));
         }else{
             // 登录失败
