@@ -10,6 +10,7 @@
 ## 工具
 - idea
 - [git](https://www.runoob.com/manual/git-guide/) 
+  - [操作](https://www.cnblogs.com/cxx8181602/p/11125539.html)
 - lombok
 - [maven](https://mvnrepository.com/)
 
@@ -17,6 +18,9 @@
 - [x] gitee验证登录 `2022.5.10`
 - [x] 发布问题至数据库 `2022.5.11`
 - [x] 问题提交错误回显 `2022.5.11`
+- [x] 实现分页功能 `2022.5.12`
 - [ ] 发布文章功能
 - [x] 首页显示问题列表 `2022.5.12`
 - [ ] 问题答疑
+
+

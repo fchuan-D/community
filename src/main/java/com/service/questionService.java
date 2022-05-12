@@ -2,6 +2,7 @@
 // @email:945001786@qq.com
 package com.service;
 
+import com.DTO.PaginationDTO;
 import com.enity.Question;
 import com.enity.User;
 import com.mapper.questionMapper;
@@ -18,12 +19,19 @@ public class questionService {
     @Autowired
     questionMapper questionMapper;
 
-    public List<Question> getList() {
-        List<Question> questionList = questionMapper.list();
+    public PaginationDTO getList(Integer page, Integer size) {
+        Integer offSet = size*(page-1);
+        List<Question> questionList = questionMapper.list(offSet,size);
+        PaginationDTO paginationDTO = new PaginationDTO();
         for (Question question : questionList) {
             User user = userMapper.findById(question.getCreator());
             question.setUser(user);
         }
-        return questionList;
+        paginationDTO.setQuestions(questionList);
+        // 数据总条数
+        Integer totalCount = questionMapper.count();
+        paginationDTO.setPagination(totalCount,page,size);
+
+        return paginationDTO;
     }
 }
