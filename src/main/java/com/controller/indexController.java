@@ -41,6 +41,8 @@ public class indexController {
             }
         }
         List<Question> questionList = questionService.getList();
+        for (Question question : questionList) {
+        }
         model.addAttribute("questions",questionList);
 
         return"index";
