@@ -24,7 +24,6 @@ public class giteeService {
                 .build();
         try (Response response = client.newCall(request).execute()) {
             String string = response.body().string();
-            System.out.println("userStr:"+string);
             String str1 = string.split(":")[1];
             String token = str1.split("\"")[1];
             return token;
