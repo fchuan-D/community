@@ -10,25 +10,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
-
 @Controller
-public class indexController {
+public class ProfileController {
     @Autowired
     userMapper userMapper;
     @Autowired
     questionService questionService;
 
-    @GetMapping("/")
-    public String index(HttpServletRequest request,
-                        @RequestParam(value = "page",defaultValue = "1")Integer page,
-                        @RequestParam(value = "size",defaultValue = "5")Integer size,
-                        Model model){
-        User user;
+    @GetMapping("/profile/{action}")
+    public String profile(
+            HttpServletRequest request,
+            @RequestParam(value = "page",defaultValue = "1")Integer page,
+            @RequestParam(value = "size",defaultValue = "5")Integer size,
+            @PathVariable(name = "action")String action,
+            Model model){
+        User user = null;
         Cookie[] cookies = request.getCookies();
         if (cookies!=null && cookies.length!=0) {
             for (Cookie cookie : cookies) {
@@ -42,8 +44,21 @@ public class indexController {
                 }
             }
         }
-        PaginationDTO pagination = questionService.getList(page, size);
+        if (user == null)
+        {
+            return "redirect:/";
+        }
+
+        if ("questions".equals(action)){
+            model.addAttribute("section","questions");
+            model.addAttribute("sectionName","我的提问");
+        }else{
+            model.addAttribute("section","replies");
+            model.addAttribute("sectionName","最新回复");
+
+        }
+        PaginationDTO pagination = questionService.perList(user.getId(), page, size);
         model.addAttribute("pagination",pagination);
-        return "index";
+        return "profile";
     }
 }

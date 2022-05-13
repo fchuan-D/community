@@ -34,4 +34,20 @@ public class questionService {
 
         return paginationDTO;
     }
+
+    public PaginationDTO perList(Integer userId, Integer page, Integer size) {
+        Integer offSet = size*(page-1);
+        List<Question> questionList = questionMapper.perList(userId,offSet,size);
+        PaginationDTO paginationDTO = new PaginationDTO();
+        User user = userMapper.findById(userId);
+        for (Question question : questionList) {
+            question.setUser(user);
+        }
+        paginationDTO.setQuestions(questionList);
+        // 数据总条数
+        Integer totalCount = questionMapper.perCount(userId);
+        paginationDTO.setPagination(totalCount,page,size);
+
+        return paginationDTO;
+    }
 }
