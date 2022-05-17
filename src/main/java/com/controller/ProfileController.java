@@ -5,19 +5,19 @@ package com.controller;
 import com.DTO.PaginationDTO;
 import com.enity.User;
 import com.service.questionService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class ProfileController {
-    @Autowired
-    questionService questionService;
+    @Resource
+    private questionService questionService;
 
     @GetMapping("/profile/{action}")
     public String profile(

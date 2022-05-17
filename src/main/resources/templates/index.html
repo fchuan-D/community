@@ -24,7 +24,9 @@
                 </a>
             </div>
             <div class="media-body">
-                <h4 class="media-heading" th:text="${question.title}"></h4>
+                <h4 class="media-heading">
+                    <a th:href="@{'/question/'+${question.id}}" th:text="${question.title}"></a>
+                </h4>
                 <span th:text="${question.description}"></span>
                 <br>
                 <span class="text-desc">
@@ -36,18 +38,20 @@
             </div>
         </div>
         <nav aria-label="Page navigation">
-            <ul class="pagination">
+            <ul class="pagination" th:method="post">
                 <li>
                     <a href="/" aria-label="Previous">
                         <span th:aria-hidden="${pagination.showFirstPage}">&laquo;</span>
                     </a>
                 </li>
                 <li th:each="page : ${pagination.pages}" th:class="${pagination.getPage() == page} ? 'active' : ''">
-                    <a th:text="${page}" th:href="@{/(page=${page})}"></a>
+                    <a th:href="@{'/?page='+${page}}" th:text="${page}" >
+
+                    </a>
                 </li>
 
                 <li>
-                    <a th:href="@{/(page=${pagination.lastPage})}" aria-label="Next">
+                    <a th:href="@{'/?page='+${pagination.lastPage}}" aria-label="Next">
                         <span th:aria-hidden="${pagination.showEndPage}">&raquo;</span>
                     </a>
                 </li>

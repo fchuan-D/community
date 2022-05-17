@@ -15,10 +15,29 @@ import java.util.List;
 @Service
 public class questionService {
     @Resource
-    userMapper userMapper;
+    private userMapper userMapper;
     @Resource
-    questionMapper questionMapper;
+    private questionMapper questionMapper;
 
+    /**
+     * 修改已发布问题
+     */
+    public void createOrUpdate(Question question) {
+        if (question.getId()==null){
+            // 创建
+            question.setGmtCreate(System.currentTimeMillis());
+            question.setGmtModified(question.getGmtCreate());
+            questionMapper.create(question);
+        }else{
+            // 修改
+            question.setGmtModified(System.currentTimeMillis());
+            questionMapper.update(question);
+        }
+    }
+
+    /**
+     * 主页获取所有问题列表展示
+     */
     public PaginationDTO getList(Integer page, Integer size) {
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.list(offSet,size);
@@ -35,6 +54,9 @@ public class questionService {
         return paginationDTO;
     }
 
+    /**
+     * 个人页面获取问题列表展示
+     */
     public PaginationDTO perList(Integer userId, Integer page, Integer size) {
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.perList(userId,offSet,size);
@@ -49,5 +71,15 @@ public class questionService {
         paginationDTO.setPagination(totalCount,page,size);
 
         return paginationDTO;
+    }
+
+    /**
+     * 获取单个问题的详情
+     */
+    public Question getById(Integer id) {
+        Question question = questionMapper.getById(id);
+        User user = userMapper.findById(question.getCreator());
+        question.setUser(user);
+        return question;
     }
 }
