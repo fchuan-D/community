@@ -5,23 +5,19 @@ package com.controller;
 import com.enity.Question;
 import com.enity.User;
 import com.mapper.questionMapper;
-import com.mapper.userMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.Cookie;
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class publishController {
-    @Autowired
+    @Resource
     private questionMapper questionMapper;
-    @Autowired
-    private userMapper userMapper;
     @GetMapping("/publish")
     public String publish(){
 
@@ -50,23 +46,9 @@ public class publishController {
             return "publish";
         }
         Question question=new Question();
-        User user = null;
-        Cookie[] cookies = request.getCookies();
-        // cookies可能为空
-        if (cookies!=null && cookies.length!=0) {
-            for (Cookie cookie : cookies) {
-                // 数据库中查找是否存在用户token
-                // 判断是否已经登录
-                if (cookie.getName().equals("token")) {
-                    String token = cookie.getValue();
-                    user = userMapper.findByToken(token);
-                    if (user != null) {
-                        request.getSession().setAttribute("user", user);
-                    }
-                    break;
-                }
-            }
-        }
+
+        User user = (User) request.getSession().getAttribute("user");
+
         if (user == null){
             model.addAttribute("error","用户未登录");
             return "publish";

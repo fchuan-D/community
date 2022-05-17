@@ -40,7 +40,7 @@ public class PaginationDTO {
             totalPage = totalCount/size + 1;
         }
         pages.add(page);
-        for (int i = 1; i <= 3; i++) {
+        for (int i = 1; i <= 4; i++) {
             // 若满足条件,往page前添加三个
             if (page-i>0){
                 pages.add(0,page-i);

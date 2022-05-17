@@ -2,26 +2,26 @@
 // @email:945001786@qq.com
 package com.controller;
 
+import com.enity.User;
 import com.enity.accessToken;
 import com.enity.giteeUser;
-import com.enity.User;
 import com.mapper.userMapper;
 import com.service.giteeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
 @Controller
 public class AuthorizeController {
-    @Autowired
+    @Resource
     private userMapper userMapper;
-    @Autowired
+    @Resource
     private giteeService giteeService;
     @Value("${gitee.client.id}")
     private String clientId;

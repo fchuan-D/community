@@ -6,10 +6,10 @@
     <title>首页</title>
     <!--  Jquery   -->
     <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-    <link rel="stylesheet" href="/css/community.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" >
-    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div th:insert="~{navigation :: nav}"></div>
@@ -39,7 +39,7 @@
             <ul class="pagination">
                 <li>
                     <a href="/" aria-label="Previous">
-                        <span th:aria-hidden="${pagination.showPrevious}">&laquo;</span>
+                        <span th:aria-hidden="${pagination.showFirstPage}">&laquo;</span>
                     </a>
                 </li>
                 <li th:each="page : ${pagination.pages}" th:class="${pagination.getPage() == page} ? 'active' : ''">
@@ -48,7 +48,7 @@
 
                 <li>
                     <a th:href="@{/(page=${pagination.lastPage})}" aria-label="Next">
-                        <span th:aria-hidden="${pagination.showNext}">&raquo;</span>
+                        <span th:aria-hidden="${pagination.showEndPage}">&raquo;</span>
                     </a>
                 </li>
             </ul>
