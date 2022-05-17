@@ -52,7 +52,12 @@ public class AuthorizeController {
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
             user.setAvatarUrl(giteeUser.getAvatarUrl());
-            userMapper.insert(user);
+            if (userMapper.findByAccountId(giteeUser.getId()) != null)
+            {
+                userMapper.update(user);
+            } else {
+                userMapper.insert(user);
+            }
             // 发送token给浏览器
             response.addCookie(new Cookie("token",token));
         }else{

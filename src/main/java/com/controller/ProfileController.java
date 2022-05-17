@@ -55,10 +55,10 @@ public class ProfileController {
         }else{
             model.addAttribute("section","replies");
             model.addAttribute("sectionName","最新回复");
-
         }
         PaginationDTO pagination = questionService.perList(user.getId(), page, size);
         model.addAttribute("pagination",pagination);
+
         return "profile";
     }
 }

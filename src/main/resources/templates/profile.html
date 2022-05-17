@@ -38,7 +38,7 @@
         <nav aria-label="Page navigation">
             <ul class="pagination">
                 <li>
-                    <a href="/" aria-label="Previous">
+                    <a th:href="@{/profile/questions}" aria-label="Previous">
                         <span th:aria-hidden="${pagination.showPrevious}">&laquo;</span>
                     </a>
                 </li>
@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a th:href="@{/(page=${pagination.lastPage})}" aria-label="Next">
+                    <a th:href="@{/profile/questions/(page=${pagination.lastPage})}" aria-label="Next">
                         <span th:aria-hidden="${pagination.showNext}">&raquo;</span>
                     </a>
                 </li>

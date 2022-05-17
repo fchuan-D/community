@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class giteeUser {
     private String name;
-    private Long id;
+    private String id;
     private String bio;
     private String avatarUrl;
 }
