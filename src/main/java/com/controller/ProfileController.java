@@ -2,7 +2,7 @@
 // @email:945001786@qq.com
 package com.controller;
 
-import com.DTO.PaginationDTO;
+import com.dto.PaginationDTO;
 import com.enity.User;
 import com.service.questionService;
 import org.springframework.stereotype.Controller;

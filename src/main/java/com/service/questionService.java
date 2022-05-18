@@ -2,9 +2,11 @@
 // @email:945001786@qq.com
 package com.service;
 
-import com.DTO.PaginationDTO;
+import com.dto.PaginationDTO;
 import com.enity.Question;
 import com.enity.User;
+import com.exception.CustomizeException;
+import com.exception.ErrorCode;
 import com.mapper.questionMapper;
 import com.mapper.userMapper;
 import org.springframework.stereotype.Service;
@@ -27,11 +29,17 @@ public class questionService {
             // 创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
-            questionMapper.create(question);
+            boolean created = questionMapper.create(question);
+            if (!created){
+                throw new CustomizeException(ErrorCode.QUESTION_NOT_CREATE);
+            }
         }else{
             // 修改
             question.setGmtModified(System.currentTimeMillis());
-            questionMapper.update(question);
+            boolean updated = questionMapper.update(question);
+            if (!updated){
+                throw new CustomizeException(ErrorCode.QUESTION_NOT_UPDATE);
+            }
         }
     }
 
@@ -78,6 +86,9 @@ public class questionService {
      */
     public Question getById(Integer id) {
         Question question = questionMapper.getById(id);
+        if (question == null){
+            throw new CustomizeException(ErrorCode.QUESTION_NOT_FOUND);
+        }
         User user = userMapper.findById(question.getCreator());
         question.setUser(user);
         return question;

@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public interface questionMapper {
     @Insert("insert into question (title,description,gmt_create,gmt_modified,creator,tag) values (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag})")
-    void create(Question question);
+    Boolean create(Question question);
 
     @Select("select * from question limit #{offSet},#{size}")
     List<Question> list(Integer offSet, Integer size);
@@ -33,5 +33,5 @@ public interface questionMapper {
     Question getById(Integer id);
 
     @Update("update question set title = #{title},description=#{description},tag=#{tag},gmt_modified=#{gmtModified} where id=#{id}")
-    void update(Question question);
+    Boolean update(Question question);
 }

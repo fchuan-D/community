@@ -1,6 +1,6 @@
 // @author:樊川
 // @email:945001786@qq.com
-package com.DTO;
+package com.dto;
 
 import com.enity.Question;
 import lombok.Data;
