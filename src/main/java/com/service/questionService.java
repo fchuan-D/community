@@ -93,4 +93,8 @@ public class questionService {
         question.setUser(user);
         return question;
     }
+
+    public void incView(Integer id) {
+        questionMapper.incView(id);
+    }
 }
