@@ -29,6 +29,9 @@ public class questionService {
             // 创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+//            question.setCommentCount(0);
+//            question.setLikeCount(0);
+//            question.setViewCount(0);
             boolean created = questionMapper.create(question);
             if (!created){
                 throw new CustomizeException(ErrorCode.QUESTION_NOT_CREATE);

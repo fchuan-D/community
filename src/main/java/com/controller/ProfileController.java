@@ -9,18 +9,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
+@RequestMapping("/profile")
 public class ProfileController {
     @Resource
     private questionService questionService;
 
-    @GetMapping("/profile/{action}")
-    public String profile(
+    @GetMapping("/{action}")
+    public String doProfile(
             HttpServletRequest request,
             @RequestParam(value = "page",defaultValue = "1")Integer page,
             @RequestParam(value = "size",defaultValue = "5")Integer size,
