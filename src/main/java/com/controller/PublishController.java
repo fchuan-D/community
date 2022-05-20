@@ -27,7 +27,7 @@ public class PublishController {
      * 回显已发布问题
      */
     @GetMapping("/publish/{id}")
-    public String edit(@PathVariable(name = "id") Integer id,
+    public String edit(@PathVariable(name = "id") Long id,
                        Model model){
         Question question = questionMapper.getById(id);
         model.addAttribute("title",question.getTitle());
@@ -50,7 +50,7 @@ public class PublishController {
             @RequestParam("title")String title,
             @RequestParam("description")String description,
             @RequestParam("tag")String tag,
-            @RequestParam("id")Integer id,
+            @RequestParam("id")Long id,
             HttpServletRequest request,
             Model model){
         User user = (User) request.getSession().getAttribute("user");

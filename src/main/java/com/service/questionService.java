@@ -65,7 +65,7 @@ public class questionService {
     /**
      * 个人页面获取问题列表展示
      */
-    public PaginationDTO perList(Integer userId, Integer page, Integer size) {
+    public PaginationDTO perList(Long userId, Integer page, Integer size) {
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.perList(userId,offSet,size);
         PaginationDTO paginationDTO = new PaginationDTO();
@@ -84,7 +84,7 @@ public class questionService {
     /**
      * 获取单个问题的详情
      */
-    public Question getById(Integer id) {
+    public Question getById(Long id) {
         Question question = questionMapper.getById(id);
         if (question == null){
             throw new CustomizeException(ErrorCode.QUESTION_NOT_FOUND);
@@ -94,7 +94,7 @@ public class questionService {
         return question;
     }
 
-    public void incView(Integer id) {
+    public void incView(Long id) {
         questionMapper.incView(id);
     }
 }

@@ -24,17 +24,17 @@ public interface questionMapper {
     Integer count();
 
     @Select("select * from question where creator=#{userId} limit #{offSet},#{size}")
-    List<Question> perList(Integer userId, Integer offSet, Integer size);
+    List<Question> perList(Long userId, Integer offSet, Integer size);
 
     @Select("select count(1) from question where creator=#{userId}")
-    Integer perCount(Integer userId);
+    Integer perCount(Long userId);
 
     @Select("select * from question where id=#{id}")
-    Question getById(Integer id);
+    Question getById(Long id);
 
     @Update("update question set title = #{title},description=#{description},tag=#{tag},gmt_modified=#{gmtModified} where id=#{id}")
     Boolean update(Question question);
 
     @Update("update question set view_count = view_count+1 where id=#{id}")
-    void incView(Integer id);
+    void incView(Long id);
 }

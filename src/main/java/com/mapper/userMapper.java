@@ -19,7 +19,7 @@ public interface userMapper {
 
 
     @Select("select * from user where id = #{id}")
-    User findById(Integer id);
+    User findById(Long id);
 
     @Select("Select * from user where account_id = #{accountId}")
     Boolean findByAccountId(String accountId);

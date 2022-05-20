@@ -3,5 +3,8 @@
 package com.exception;
 
 public interface IErrorCode {
+
     String getMessage();
+
+    Integer getCode();
 }
