@@ -2,6 +2,8 @@
 // @email:945001786@qq.com
 package com.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.enity.Comment;
 import com.enity.Question;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
@@ -13,7 +15,7 @@ import java.util.List;
 
 @Mapper
 @Repository
-public interface questionMapper {
+public interface questionMapper extends BaseMapper<Question> {
     @Insert("insert into question (title,description,gmt_create,gmt_modified,creator,tag) values (#{title},#{description},#{gmtCreate},#{gmtModified},#{creator},#{tag})")
     Boolean create(Question question);
 

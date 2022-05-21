@@ -19,7 +19,7 @@
         <hr>
         <div class="media" th:each="question : ${pagination.questions}">
             <div class="media-left">
-                <a href="/publish" th:href="@{'/question/'+${question.id}}">
+                <a th:href="@{'/question/'+${question.id}}">
                     <img class="media-object img-rounded" th:src="${question.user.avatarUrl}">
                 </a>
             </div>
@@ -60,5 +60,6 @@
         <h3>热门话题</h3>
     </div>
 </div>
+<div th:insert="~{footer :: foot}"></div>
 </body>
 </html>

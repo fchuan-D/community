@@ -27,8 +27,8 @@ public class QuestionController {
         Question question = questionService.getById(id);
         // 增加浏览次数
         questionService.incView(id);
-        // 获取评论
-        List<Comment> comments = commentService.getById(id);
+        // 获取问题下的所有评论
+        List<Comment> comments = commentService.getListByQId(id);
         model.addAttribute("question",question);
         model.addAttribute("comments",comments);
         return "question";

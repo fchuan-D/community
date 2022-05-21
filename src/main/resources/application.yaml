@@ -5,6 +5,16 @@ spring:
     username: root
     password: password
 
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    servlet.content-type: text/html
+    encoding: utf-8
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+
   devtools:
     restart:
       enabled: true  #设置开启热部署
@@ -13,4 +23,6 @@ spring:
 
   freemarker:
     cache: false    #页面不加载缓存，修改即时生效
+
+
 

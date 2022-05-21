@@ -13,6 +13,7 @@
   - [操作](https://www.cnblogs.com/cxx8181602/p/11125539.html)
 - lombok
 - [maven](https://mvnrepository.com/)
+- [mybatis-plus](https://baomidou.com/pages/49cc81/#service-crud-%E6%8E%A5%E5%8F%A3)
 
 ## 开发日志
 - [x] gitee验证登录 `2022.5.10`

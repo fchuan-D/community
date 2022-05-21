@@ -29,7 +29,7 @@ public class IndexController {
                         @RequestParam(value = "page",defaultValue = "1")Integer page,
                         @RequestParam(value = "size",defaultValue = "5")Integer size,
                         Model model){
-        System.out.println("Set-Cookie:"+response.getHeader("Set-Cookie"));
+//        System.out.println("Set-Cookie:"+response.getHeader("Set-Cookie"));
         if ((page-1)*size>questionMapper.count()){
             throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
         }

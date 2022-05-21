@@ -29,8 +29,6 @@ public class commentService {
     @Resource
     private userMapper userMapper;
 
-
-
     @Transactional
     public void insert(Comment comment, User commentator) {
         if (comment.getParentId() == null || comment.getParentId() == 0) {
@@ -76,8 +74,22 @@ public class commentService {
         }
     }
 
-    public List<Comment> getById(Long parentId) {
-        List<Comment> comments = commentMapper.commentList(parentId);
+    /**
+     * 查询某一问题下的所有评论
+     * @param parentId
+     * @return
+     */
+    public List<Comment> getListByQId(Long parentId) {
+        List<Comment> comments = commentMapper.commentList(parentId,CommentTypeEnum.QUESTION);
+        for (Comment comment : comments) {
+            Long uerId = comment.getCommentator();
+            comment.setUser(userMapper.findById(uerId));
+        }
+        return comments;
+    }
+
+    public List<Comment> getListByCId(Long commentId) {
+        List<Comment> comments = commentMapper.childComments(commentId,CommentTypeEnum.COMMENT);
         for (Comment comment : comments) {
             Long uerId = comment.getCommentator();
             comment.setUser(userMapper.findById(uerId));

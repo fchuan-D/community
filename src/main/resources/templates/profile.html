@@ -19,7 +19,7 @@
         <hr>
         <div class="media" th:each="question : ${pagination.questions}">
             <div class="media-left">
-                <a href="/publish">
+                <a th:href="@{'/question/'+${question.id}}">
                     <img class="media-object img-rounded" th:src="${question.user.avatarUrl}">
                 </a>
             </div>
@@ -65,5 +65,6 @@
     </div>
     </div>
 </div>
+<div th:insert="~{footer :: foot}"></div>
 </body>
 </html>
