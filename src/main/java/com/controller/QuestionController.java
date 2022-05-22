@@ -29,8 +29,13 @@ public class QuestionController {
         questionService.incView(id);
         // 获取问题下的所有评论
         List<Comment> comments = commentService.getListByQId(id);
+        // 获取相关问题
+        List<Question> relatedQuestions = questionService.selectRelated(question);
+
         model.addAttribute("question",question);
         model.addAttribute("comments",comments);
+        model.addAttribute("relatedQuestions",relatedQuestions);
+
         return "question";
     }
 }

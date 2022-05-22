@@ -5,9 +5,10 @@ package com.controller;
 import com.dto.CommentDTO;
 import com.dto.ResultDTO;
 import com.enity.Comment;
+import com.enity.Notification;
 import com.enity.User;
-import com.enums.CommentTypeEnum;
 import com.exception.ErrorCode;
+import com.mapper.notificationMapper;
 import com.service.commentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +23,10 @@ public class CommentController {
     @Resource
     private commentService commentService;
 
+    @Resource
+    private notificationMapper notificationMapper;
+
+
     // 接受问题回复
     @ResponseBody
     @RequestMapping(value = "/comment",method = RequestMethod.POST)
@@ -30,15 +35,6 @@ public class CommentController {
         if (user == null){
             return ResultDTO.errorOf(ErrorCode.NO_LOGIN);
         }
-//        if (user.getDisable() != null && user.getDisable() == 1) {
-//            return ResultDTO.errorOf(ErrorCode.USER_DISABLE);
-//        }
-//        if (commentDTO == null || StringUtils.isBlank(commentDTO.getContent())) {
-//            return ResultDTO.errorOf(ErrorCode.CONTENT_IS_EMPTY);
-//        }
-//        if (questionRateLimiter.reachLimit(user.getId())) {
-//            return ResultDTO.errorOf(ErrorCode.RATE_LIMIT);
-//        }
         Comment comment = new Comment();
         comment.setParentId(commentDTO.getParentId());
         comment.setContent(commentDTO.getContent());
@@ -48,6 +44,10 @@ public class CommentController {
         comment.setLikeCount(0L);
         comment.setCommentator(user.getId());
         commentService.insert(comment,user);
+        List<Notification> select = notificationMapper.select();
+        for (Notification notification : select) {
+            System.out.println(notification);
+        }
         return ResultDTO.okOf();
     }
 

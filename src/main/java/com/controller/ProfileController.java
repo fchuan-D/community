@@ -3,7 +3,10 @@
 package com.controller;
 
 import com.dto.PaginationDTO;
+import com.enity.Notification;
+import com.enity.Question;
 import com.enity.User;
+import com.service.NotificationService;
 import com.service.questionService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +24,9 @@ public class ProfileController {
     @Resource
     private questionService questionService;
 
+    @Resource
+    private NotificationService notificationService;
+
     @GetMapping("/{action}")
     public String doProfile(
             HttpServletRequest request,
@@ -37,13 +43,14 @@ public class ProfileController {
         if ("questions".equals(action)){
             model.addAttribute("section","questions");
             model.addAttribute("sectionName","我的提问");
-        }else{
+            PaginationDTO<Question> pagination = questionService.perList(user.getId(), page, size);
+            model.addAttribute("pagination",pagination);
+        }else if ("replies".equals(action)){
+            PaginationDTO<Notification> pagination = notificationService.getNotifyList(user.getId(), page, size);
             model.addAttribute("section","replies");
+            model.addAttribute("pagination",pagination);
             model.addAttribute("sectionName","最新回复");
         }
-        PaginationDTO pagination = questionService.perList(user.getId(), page, size);
-        model.addAttribute("pagination",pagination);
-
         return "profile";
     }
 }

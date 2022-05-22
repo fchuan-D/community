@@ -2,6 +2,7 @@
 // @email:945001786@qq.com
 package com.dto;
 
+import com.enity.Notification;
 import com.enity.Question;
 import lombok.Data;
 
@@ -20,8 +21,8 @@ import java.util.List;
  *      pages:页码表
  */
 @Data
-public class PaginationDTO {
-    private List<Question> questions;
+public class PaginationDTO<T> {
+    private List<T> data;
     private boolean showPrevious;
     private boolean showFirstPage;
     private boolean showNext;
@@ -40,7 +41,7 @@ public class PaginationDTO {
             totalPage = totalCount/size + 1;
         }
         pages.add(page);
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 3; i++) {
             // 若满足条件,往page前添加三个
             if (page-i>0){
                 pages.add(0,page-i);

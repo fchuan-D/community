@@ -1,13 +1,13 @@
 // @author:樊川
 // @email:945001786@qq.com
-package com.enity;
+package com.provider.dto;
 
 import lombok.Data;
 
 @Data
-public class giteeUser {
+public class GithubUser {
     private String name;
-    private String id;
+    private Long id;
     private String bio;
     private String avatarUrl;
 }

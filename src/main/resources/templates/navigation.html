@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>navigation</title>
@@ -31,6 +32,9 @@
           <li th:if="${session.user != null}">
             <a href="/publish">提问</a>
           </li>
+          <li>
+            <a href="/profile/replies">通知 <span class="badge" th:text="${session.unreadCount}"></span></a>
+          </li>
           <li class="dropdown" th:if="${session.user != null}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <span th:text="${session.user.getName()}"></span>
@@ -38,17 +42,42 @@
             </a>
             <ul class="dropdown-menu">
               <li><a href="/profile/questions">我的问题</a></li>
-              <li><a href="#">个人资料</a></li>
-              <li><a href="#">退出登录</a></li>
+              <li><a href="/logout">退出登录</a></li>
             </ul>
           </li>
           <li th:unless="${session.user != null}">
-            <a href="https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1">登录</a>
+<!--            <a href="https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1">登录</a>-->
+            <a href="#" data-toggle="modal" data-target="#myModal">登录</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="margin-top: 200px;width: 300px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                  aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">登录注册</h4>
+        </div>
+        <div class="modal-body" style="text-align:center">
+          <a th:href="@{https://gitee.com/oauth/authorize(client_id='6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069',redirect_uri=${#httpServletRequest.getServletContext().getAttribute('giteeRedirectUri')},response_type=code)}">
+            Gitee<img src="/img/gitee.ico">
+          </a>
+          <a th:href="@{https://github.com/login/oauth/authorize(client_id='7f316909bf70d1eaa2b2',redirect_uri=${#httpServletRequest.getServletContext().getAttribute('githubRedirectUri')},scope='user',state=1)}">
+            Github<img src="/img/gitee.ico">
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 </body>
 </html>

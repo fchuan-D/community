@@ -9,10 +9,14 @@ import com.exception.CustomizeException;
 import com.exception.ErrorCode;
 import com.mapper.questionMapper;
 import com.mapper.userMapper;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class questionService {
@@ -22,6 +26,28 @@ public class questionService {
     private questionMapper questionMapper;
 
     /**
+     * 根据标签选择相关问题
+     */
+    public List<Question> selectRelated(Question queryDTO) {
+        if (StringUtils.isBlank(queryDTO.getTag())) {
+            return new ArrayList<>();
+        }
+        String[] tags = StringUtils.split(queryDTO.getTag(), ",");
+        String regexpTag = Arrays
+                .stream(tags)
+                .filter(StringUtils::isNotBlank)
+                .map(t -> t.replace("+", "").replace("*", "").replace("?", ""))
+                .filter(StringUtils::isNotBlank)
+                .collect(Collectors.joining(","));
+        Question question = new Question();
+        question.setId(queryDTO.getId());
+        question.setTag(regexpTag);
+        List<Question> questions = questionMapper.selectRelated(question);
+
+        return questions;
+    }
+
+    /**
      * 修改已发布问题
      */
     public void createOrUpdate(Question question) {
@@ -29,9 +55,6 @@ public class questionService {
             // 创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
-//            question.setCommentCount(0);
-//            question.setLikeCount(0);
-//            question.setViewCount(0);
             boolean created = questionMapper.create(question);
             if (!created){
                 throw new CustomizeException(ErrorCode.QUESTION_NOT_CREATE);
@@ -52,12 +75,12 @@ public class questionService {
     public PaginationDTO getList(Integer page, Integer size) {
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.list(offSet,size);
-        PaginationDTO paginationDTO = new PaginationDTO();
+        PaginationDTO<Question> paginationDTO = new PaginationDTO<>();
         for (Question question : questionList) {
             User user = userMapper.findById(question.getCreator());
             question.setUser(user);
         }
-        paginationDTO.setQuestions(questionList);
+        paginationDTO.setData(questionList);
         // 数据总条数
         Integer totalCount = questionMapper.count();
         paginationDTO.setPagination(totalCount,page,size);
@@ -71,12 +94,12 @@ public class questionService {
     public PaginationDTO perList(Long userId, Integer page, Integer size) {
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.perList(userId,offSet,size);
-        PaginationDTO paginationDTO = new PaginationDTO();
+        PaginationDTO<Question> paginationDTO = new PaginationDTO<>();
         User user = userMapper.findById(userId);
         for (Question question : questionList) {
             question.setUser(user);
         }
-        paginationDTO.setQuestions(questionList);
+        paginationDTO.setData(questionList);
         // 数据总条数
         Integer totalCount = questionMapper.perCount(userId);
         paginationDTO.setPagination(totalCount,page,size);
@@ -97,6 +120,9 @@ public class questionService {
         return question;
     }
 
+    /**
+     * 增加阅读数
+     */
     public void incView(Long id) {
         questionMapper.incView(id);
     }

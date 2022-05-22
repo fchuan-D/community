@@ -24,9 +24,9 @@ public interface commentMapper extends BaseMapper<Comment>{
     @Update("update comment set comment_count = comment_count + 1 where id=#{id}")
     void incCommentCount(Comment parentComment);
 
-    @Select("select * from comment where parent_id=#{parentId} and type=1")
+    @Select("select * from comment where parent_id=#{parentId} and type=1 order by gmt_create DESC")
     List<Comment> commentList(Long parentId, CommentTypeEnum question);
 
-    @Select("select * from comment where parent_id=#{commentId} and type=2")
+    @Select("select * from comment where parent_id=#{commentId} and type=2 order by gmt_create DESC")
     List<Comment> childComments(Long commentId, CommentTypeEnum comment);
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: #9d9d9d;
+    background-color: #efefef;
 }
 .main {
     background-color: white;
@@ -28,17 +28,17 @@ body {
     margin-top: 25px;
 }
 .question-tag {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 .question-related {
-    line-height: 20px;
-    font-size: 12px;
+    line-height: 30px;
+    font-size: 17px;
     margin-left: 0;
     list-style: none;
     padding-left: 0;
 }
 .question-wechat {
-    width: 95%;
+    width: 70%;
 }
 .publish-tag-tab {
     display: none;
@@ -57,6 +57,24 @@ body {
 .community-menu {
     color: #999;
     font-size: 12px;
+}
+.community-tag:hover {
+    background-color: #339dff;
+    color: #fff !important;
+    text-decoration-line: none;
+}
+.community-tag {
+    text-decoration-line: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-top: 5px;
+    line-height: 16px;
+    padding: 2px 5px;
+    background-color: #99cfff;
+    font-size: 13px;
+    color: #fff !important;
+    border-radius: 4px;
 }
 .jumbotron {
     margin: 50px;

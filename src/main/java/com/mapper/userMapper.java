@@ -22,7 +22,7 @@ public interface userMapper extends BaseMapper<User> {
     User findById(Long id);
 
     @Select("Select * from user where account_id = #{accountId}")
-    Boolean findByAccountId(String accountId);
+    Boolean findByAccountId(Long accountId);
 
     @Update("update user set token = #{token},gmt_create=#{gmtCreate},gmt_modified = #{gmtModified},name=#{name},avatar_url=#{avatarUrl}")
     void update(User user);

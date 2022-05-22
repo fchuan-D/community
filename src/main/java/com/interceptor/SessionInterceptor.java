@@ -4,6 +4,7 @@ package com.interceptor;
 
 import com.enity.User;
 import com.mapper.userMapper;
+import com.service.NotificationService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,6 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class SessionInterceptor implements HandlerInterceptor {
     @Resource
     userMapper userMapper;
+    @Resource
+    NotificationService notificationService;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         Cookie[] cookies = request.getCookies();
@@ -27,6 +30,8 @@ public class SessionInterceptor implements HandlerInterceptor {
                     User user = userMapper.findByToken(token);
                     if (user != null) {
                         request.getSession().setAttribute("user", user);
+                        Long unreadCount = notificationService.getUnread(user.getId());
+                        request.getSession().setAttribute("unreadCount",unreadCount);
                     }
                     break;
                 }

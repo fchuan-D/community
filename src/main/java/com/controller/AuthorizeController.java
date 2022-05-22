@@ -4,9 +4,9 @@ package com.controller;
 
 import com.enity.User;
 import com.enity.accessToken;
-import com.enity.giteeUser;
+import com.provider.dto.giteeUser;
 import com.mapper.userMapper;
-import com.service.giteeService;
+import com.provider.giteeService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
