@@ -5,10 +5,8 @@ package com.controller;
 import com.dto.CommentDTO;
 import com.dto.ResultDTO;
 import com.enity.Comment;
-import com.enity.Notification;
 import com.enity.User;
 import com.exception.ErrorCode;
-import com.mapper.notificationMapper;
 import com.service.commentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,10 +20,6 @@ import java.util.List;
 public class CommentController {
     @Resource
     private commentService commentService;
-
-    @Resource
-    private notificationMapper notificationMapper;
-
 
     // 接受问题回复
     @ResponseBody
@@ -44,10 +38,6 @@ public class CommentController {
         comment.setLikeCount(0L);
         comment.setCommentator(user.getId());
         commentService.insert(comment,user);
-        List<Notification> select = notificationMapper.select();
-        for (Notification notification : select) {
-            System.out.println(notification);
-        }
         return ResultDTO.okOf();
     }
 

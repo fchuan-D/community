@@ -99,6 +99,7 @@ public class commentService {
         notification.setReceiver(receiver);
         notification.setNotifierName(notifierName);
         notification.setOuterTitle(outerTitle);
+        notification.setId(0L);
         System.out.println(notification);
         notificationMapper.insert(notification);
     }

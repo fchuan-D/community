@@ -23,4 +23,7 @@ public interface notificationMapper extends BaseMapper<Notification> {
 
     @Select("select count(1) from notification where receiver = ${userId} and status=0")
     Long unreadCount(Long id);
+
+    @Select("select id,notifier,receiver,outerid,type,gmt_create,status,notifier_name,outer_title FROM notification WHERE id=#{id}")
+    Notification selectById(Long id);
 }
