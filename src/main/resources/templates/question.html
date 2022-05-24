@@ -2,16 +2,9 @@
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title th:text="${question.title}"></title>
-    <!--  Jquery   -->
-    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-    <link rel="stylesheet" href="/css/community.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" >
-    <script src="https://cdn.staticfile.org/moment.js/2.24.0/moment.min.js"></script>
-    <script src="/js/community.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <head th:insert="~{import :: head}"></head>
+    <head th:insert="~{import :: markdown}"></head>
 </head>
 <body>
 <div th:insert="~{navigation :: nav}"></div>
@@ -33,7 +26,14 @@
 
             <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <!--内容-->
-            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" th:text="${question.description}"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="question-view">
+                <textarea style="display:none;" th:text="${question.description}"></textarea>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    editormd.markdownToHTML("question-view", {});
+                });
+            </script>
 
             <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <!--标签-->
@@ -109,7 +109,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="comment_section">
                 <div class="media">
                     <div class="media-left">
-                        <a href="/profile/questions">
+                        <a href="#">
                             <img class="media-object img-rounded"
                                  th:src="${session.user != null ? session.user.avatarUrl : '/images/default-avatar.png'}">
                         </a>
@@ -150,7 +150,7 @@
         <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <h4>站长微信</h4>
-            <img class="img-thumbnail question-wechat" src="/img/wechat.jpg">
+            <img class="img-thumbnail question-wechat" src="/images/wechat.jpg">
         </div>
 
         <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">

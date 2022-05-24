@@ -44,4 +44,10 @@ public interface questionMapper extends BaseMapper<Question> {
 
     @Select("select * from question where tag like #{tag} and id !=${id}")
     List<Question> selectRelated(Question question);
+
+    @Select("select * from question where title like CONCAT('%',#{search},'%') order by gmt_create DESC limit #{offSet},#{size}")
+    List<Question> searchList(String search, Integer offSet, Integer size);
+
+    @Select("select count(1) from question where title like CONCAT('%',#{search},'%')")
+    Integer searchCount(String search);
 }

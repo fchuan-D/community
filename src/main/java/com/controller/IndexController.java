@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
 
 
 @Controller
@@ -25,15 +24,30 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(
-                        HttpServletResponse response,
                         @RequestParam(value = "page",defaultValue = "1")Integer page,
                         @RequestParam(value = "size",defaultValue = "5")Integer size,
+                        @RequestParam(name = "search", required = false) String search,
                         Model model){
-//        System.out.println("Set-Cookie:"+response.getHeader("Set-Cookie"));
         if ((page-1)*size>questionMapper.count()){
             throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
         }
         PaginationDTO pagination = questionService.getList(page, size);
+        model.addAttribute("search", search);
+        model.addAttribute("pagination",pagination);
+        return "index";
+    }
+
+    @GetMapping("/search")
+    public String getSearch(
+            @RequestParam(value = "page",defaultValue = "1")Integer page,
+            @RequestParam(value = "size",defaultValue = "5")Integer size,
+            @RequestParam(name = "search", required = false) String search,
+            Model model){
+        if ((page-1)*size>questionMapper.count()){
+            throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
+        }
+        PaginationDTO pagination = questionService.getSearch(search,page, size);
+        model.addAttribute("search",search);
         model.addAttribute("pagination",pagination);
         return "index";
     }

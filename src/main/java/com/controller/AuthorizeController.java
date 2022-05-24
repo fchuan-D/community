@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Enumeration;
 import java.util.UUID;
 
 @Controller
@@ -45,6 +47,7 @@ public class AuthorizeController {
         giteeUser giteeUser = giteeService.getUser(Token);
         if (giteeUser!=null){
             User user = new User();
+            // 生成token
             String token = UUID.randomUUID().toString();
             user.setName(giteeUser.getName());
             user.setToken(token);
@@ -64,6 +67,15 @@ public class AuthorizeController {
             // 登录失败
             return "index";
         }
+        return "redirect:/";
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute("user");
+        user.setToken(null);
+        userMapper.update(user);
+        request.getSession().removeAttribute("user");
         return "redirect:/";
     }
 }

@@ -30,7 +30,7 @@ function comment2target(targetId, type, content) {
                     var isAccepted = confirm(response.message);
                     if (isAccepted) {
                         $('#myModal').modal({});
-                        window.open("https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=" + document.location.origin + "/callback&response_type=code&state=1");
+                        window.open("https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1");
                         window.localStorage.setItem("closable", true);
                     }
                 } else {

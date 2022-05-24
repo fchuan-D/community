@@ -2,14 +2,9 @@
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>首页</title>
-    <!--  Jquery   -->
-    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
-    <link rel="stylesheet" href="css/community.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
-    <script src="js/bootstrap.min.js"></script>
+    <head th:insert="~{import :: head}"></head>
+    <head th:insert="~{import :: markdown}"></head>
 </head>
 <body>
 <div th:insert="~{navigation :: nav}"></div>
@@ -27,7 +22,7 @@
                 <h4 class="media-heading">
                     <a th:href="@{'/question/'+${question.id}}" th:text="${question.title}"></a>
                 </h4>
-                <span th:text="${question.description}"></span>
+<!--                <span th:text="${question.description}"></span>-->
                 <br>
                 <span class="text-desc">
                     <span th:text="${question.commentCount}"></span> 个回复 ·
@@ -40,16 +35,24 @@
         <nav aria-label="Page navigation">
             <ul class="pagination" th:method="get">
                 <li>
-                    <a th:href="@{'/?page=1'}" aria-label="Previous">
+                    <a th:if="${search==null}" th:href="@{'/?page=1'}" aria-label="Previous">
+                        <span th:aria-hidden="${pagination.showFirstPage}">&laquo;</span>
+                    </a>
+                    <a th:if="${search!=null}" th:href="@{'/search?search='+${search}+'&page=1'}" aria-label="Previous">
                         <span th:aria-hidden="${pagination.showFirstPage}">&laquo;</span>
                     </a>
                 </li>
                 <li th:each="page : ${pagination.pages}" th:class="${pagination.getPage() == page} ? 'active' : ''">
-                    <a th:href="@{'/?page='+${page}}" th:text="${page}" >
+                    <a th:if="${search==null}" th:href="@{'/?page='+${page}}" th:text="${page}" >
+                    </a>
+                    <a th:if="${search!=null}" th:href="@{'/search?search='+${search}+'&page='+${page}}" th:text="${page}" >
                     </a>
                 </li>
                 <li>
-                    <a th:href="@{'/?page='+${pagination.lastPage}}" aria-label="Next">
+                    <a th:if="${search==null}" th:href="@{'/?page='+${pagination.lastPage}}" aria-label="Next">
+                        <span th:aria-hidden="${pagination.showEndPage}">&raquo;</span>
+                    </a>
+                    <a th:if="${search!=null}" th:href="@{'/search?search='+${search}+'&page='+${pagination.lastPage}}" aria-label="Next">
                         <span th:aria-hidden="${pagination.showEndPage}">&raquo;</span>
                     </a>
                 </li>
@@ -58,16 +61,13 @@
     </div>
     <div class="col-lg-3 col-md-12 col-xs-12 col-sm-12">
         <h3>热门话题</h3>
-        <!--微信号-->
         <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <h4>站长微信</h4>
-            <img class="img-thumbnail question-wechat" src="/img/wechat.jpg">
+            <img class="img-thumbnail question-wechat" src="/images/wechat.jpg">
         </div>
         <hr class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
     </div>
-
-
 
 </div>
 <div th:insert="~{footer :: foot}"></div>

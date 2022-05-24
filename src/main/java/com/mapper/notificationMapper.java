@@ -15,7 +15,7 @@ public interface notificationMapper extends BaseMapper<Notification> {
     @Select("select count(1) from notification where receiver = ${userId}")
     Integer count(Long receiverId);
 
-    @Select("select * from notification where receiver=#{receiverId} and status = 0 limit #{offSet},#{size}")
+    @Select("select * from notification where receiver=#{receiverId} order by gmt_create DESC limit #{offSet},#{size}")
     List<Notification> list(Long receiverId, Integer offSet, Integer size);
 
     @Select("select * from notification")

@@ -1,0 +1,1336 @@
+2022-05-24 19:49:43.804  INFO 9824 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9824 (D:\community\target\classes started by 樊川 in D:\community)
+2022-05-24 19:49:43.808  INFO 9824 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-05-24 19:49:43.875  INFO 9824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-24 19:49:43.875  INFO 9824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-24 19:49:46.811  INFO 9824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-05-24 19:49:46.819  INFO 9824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-24 19:49:46.819  INFO 9824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 19:49:46.904  INFO 9824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-24 19:49:46.904  INFO 9824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3028 ms
+2022-05-24 19:49:47.863  WARN 9824 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 19:49:47.873  WARN 9824 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 19:49:47.932  WARN 9824 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 19:49:47.968  WARN 9824 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 19:49:48.005  WARN 9824 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-05-24 19:49:48.204  INFO 9824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-24 19:49:48.431  INFO 9824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-24 19:49:48.464  INFO 9824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-24 19:49:48.473  INFO 9824 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.377 seconds (JVM running for 6.801)
+2022-05-24 19:50:40.394  INFO 9824 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-24 19:50:40.395  INFO 9824 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-24 19:50:40.396  INFO 9824 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-24 19:50:40.426  INFO 9824 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-24 19:50:40.652  INFO 9824 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-24 19:53:36.984  INFO 9824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-24 19:53:36.990  INFO 9824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-24 19:53:40.681  INFO 11688 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 11688 (D:\community\target\classes started by 樊川 in D:\community)
+2022-05-24 19:53:40.682  INFO 11688 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-05-24 19:53:40.721  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-24 19:53:40.722  INFO 11688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-24 19:53:42.928  INFO 11688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-05-24 19:53:42.935  INFO 11688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-24 19:53:42.935  INFO 11688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 19:53:43.005  INFO 11688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-24 19:53:43.005  INFO 11688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2283 ms
+2022-05-24 19:53:43.885  WARN 11688 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 19:53:43.901  WARN 11688 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 19:53:43.983  WARN 11688 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 19:53:44.019  WARN 11688 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 19:53:44.060  WARN 11688 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-05-24 19:53:44.246  INFO 11688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-24 19:53:44.495  INFO 11688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-24 19:53:44.523  INFO 11688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-24 19:53:44.532  INFO 11688 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.301 seconds (JVM running for 5.524)
+2022-05-24 20:01:48.274  INFO 9792 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9792 (D:\community\target\classes started by 樊川 in D:\community)
+2022-05-24 20:01:48.275  INFO 9792 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-05-24 20:01:48.314  INFO 9792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-24 20:01:48.314  INFO 9792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-24 20:01:50.540  INFO 9792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2022-05-24 20:01:50.547  INFO 9792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-24 20:01:50.548  INFO 9792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-24 20:01:50.616  INFO 9792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-24 20:01:50.617  INFO 9792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2022-05-24 20:01:51.438  WARN 9792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 20:01:51.449  WARN 9792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 20:01:51.495  WARN 9792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-05-24 20:01:51.527  WARN 9792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-05-24 20:01:51.559  WARN 9792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-05-24 20:01:51.724  INFO 9792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-24 20:01:51.930  INFO 9792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-24 20:01:51.956  INFO 9792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2022-05-24 20:01:51.965  INFO 9792 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.126 seconds (JVM running for 5.122)
+2022-05-24 20:02:04.375  INFO 9792 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-24 20:02:04.375  INFO 9792 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-24 20:02:04.376  INFO 9792 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-24 20:02:04.401  INFO 9792 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-24 20:02:04.619  INFO 9792 --- [http-nio-80-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-24 20:02:04.625 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:04.643 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:04.661 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:04.676 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:04.676 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:04.677 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:04.689 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:04.689 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:04.691 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:04.691 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:04.692 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:04.695 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:04.696 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:04.696 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:04.697 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:04.698 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:04.698 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:04.700 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:04.700 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:04.701 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:04.702 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:04.702 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:04.703 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:04.704 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:04.704 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:04.704 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:04.705 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:04.706 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:04.706 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:04.707 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:05.021 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.021 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.021 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.021 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.022 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.023 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.024 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.024 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.024 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.024 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.025 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.026 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.026 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.026 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.027 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.027 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.027 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.027 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.027 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.028 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.029 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.044 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.044 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.044 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.045 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.046 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.047 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.047 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.047 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.047 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.047 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.048 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.048 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.048 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.048 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.049 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.050 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.050 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.050 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.076 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.076 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.077 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.078 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.078 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.078 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.086 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.086 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.087 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.088 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.088 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.089 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.096 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.096 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.096 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.096 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.097 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.097 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.097 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.097 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.098 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.099 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.099 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.099 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.109 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.109 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.110 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.111 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.111 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.112 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.123 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.123 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.124 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.124 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.125 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.125 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.130 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.131 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.132 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.132 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.133 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.134 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:05.151 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:05.151 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:05.152 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:05.152 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:05.153 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:05.153 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.161 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.161 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.163 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.163 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.163 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.165 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.166 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:06.166 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:06.167 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:06.168 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:06.168 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:06.169 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:06.170 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:06.170 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:06.171 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:06.171 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:06.171 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:06.173 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:06.173 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:06.174 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:06.175 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:06.175 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:06.175 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:06.176 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:06.177 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:06.177 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:06.178 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:06.178 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:06.178 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:06.179 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:06.201 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.202 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.203 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.203 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.204 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.204 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.205 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.205 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.206 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.207 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.208 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.209 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.209 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.209 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.209 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.210 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.210 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.212 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.212 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.212 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.212 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.213 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.213 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.213 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.215 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.214 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.215 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.215 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.215 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.216 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.217 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.218 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.218 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.220 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.231 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.231 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.233 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.233 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.233 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.234 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.246 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.247 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.248 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.249 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.249 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.250 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.263 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.264 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.264 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.264 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.264 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.264 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.265 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.265 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.266 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.266 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.266 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.266 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.266 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.267 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.267 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.267 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.267 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.268 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.284 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.284 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.286 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.286 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.286 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.287 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.291 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.292 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.293 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.293 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.293 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.294 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.299 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.300 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.301 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.301 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.302 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.302 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:06.320 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:06.320 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:06.321 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:06.322 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:06.322 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:06.323 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.455 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.455 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.456 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.457 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.457 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.457 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.459 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:02:07.460 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : ==> Parameters: 81(Long)
+2022-05-24 20:02:07.461 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:02:07.461 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:07.461 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:07.462 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:07.462 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:02:07.463 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : ==> Parameters: 81(Long)
+2022-05-24 20:02:07.475 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:02:07.485 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:02:07.485 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : ==> Parameters: 81(Long)
+2022-05-24 20:02:07.487 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : <==      Total: 1
+2022-05-24 20:02:07.487 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:07.487 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:07.488 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:07.497 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=81
+2022-05-24 20:02:07.497 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : ==> Parameters: javascript(String)
+2022-05-24 20:02:07.499 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : <==      Total: 1
+2022-05-24 20:02:07.533 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.533 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.534 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.534 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.534 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.534 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.535 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.535 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.535 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.536 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.536 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.536 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.536 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.536 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.537 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.537 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.537 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.537 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.538 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.538 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.539 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.539 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.539 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.539 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.539 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.540 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.540 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.541 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.541 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.542 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.542 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.543 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.543 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.544 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.544 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.545 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.545 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.545 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.546 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.546 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.546 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.547 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.547 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.548 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.549 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.550 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.550 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.550 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.550 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.551 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.551 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.551 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.552 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.557 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.557 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.558 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.559 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.559 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.560 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.569 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.569 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.570 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.570 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.570 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.570 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.577 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.577 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.578 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.578 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.578 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.579 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.595 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.596 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.597 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.598 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.598 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.598 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.609 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.609 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.610 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.610 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.610 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.611 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.617 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.617 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.618 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.618 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.619 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.619 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.623 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.624 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.624 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.625 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.625 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.625 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:07.643 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:07.643 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:07.644 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:07.644 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:07.644 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:07.645 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:10.123 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:10.124 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:10.125 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:10.125 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:10.125 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:10.126 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:10.127 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.childComments   : ==>  Preparing: select * from comment where parent_id=? and type=2 order by gmt_create DESC
+2022-05-24 20:02:10.128 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.childComments   : ==> Parameters: 111(Long)
+2022-05-24 20:02:10.130 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.childComments   : <==      Total: 1
+2022-05-24 20:02:10.130 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:10.130 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:10.131 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:21.161 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.161 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.162 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.163 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.163 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.164 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.166 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perList        : ==>  Preparing: select * from question where creator=? order by gmt_create DESC limit ?,?
+2022-05-24 20:02:21.166 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perList        : ==> Parameters: 19(Long), 0(Integer), 5(Integer)
+2022-05-24 20:02:21.181 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perList        : <==      Total: 5
+2022-05-24 20:02:21.182 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:21.182 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:21.183 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:21.183 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perCount       : ==>  Preparing: select count(1) from question where creator=?
+2022-05-24 20:02:21.183 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perCount       : ==> Parameters: 19(Long)
+2022-05-24 20:02:21.184 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.questionMapper.perCount       : <==      Total: 1
+2022-05-24 20:02:21.207 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.207 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.208 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.208 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.209 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.209 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.209 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.210 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.210 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.210 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.210 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.210 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.211 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.211 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.211 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.211 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.212 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.212 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.212 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.213 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.213 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.213 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.214 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.214 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.214 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.214 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.214 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.216 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.218 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.215 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.218 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.219 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.219 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.215 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.220 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.221 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.221 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.221 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.221 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.221 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.222 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.222 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.223 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.224 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.225 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.225 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.225 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.226 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.226 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.227 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.227 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.227 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.227 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.227 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.228 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.229 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.229 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.229 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.252 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.252 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.253 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.253 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.253 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.254 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.267 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.267 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.267 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.268 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.268 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.268 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.269 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.270 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.270 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.270 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.284 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.284 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.285 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.285 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.286 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.286 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.293 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.293 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.294 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.294 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.294 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.295 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.300 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.300 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.301 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.301 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.301 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.301 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:21.315 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:21.315 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:21.316 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:21.316 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:21.317 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:21.317 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.288 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.289 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.290 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.290 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.290 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.291 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.293 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.list       : ==>  Preparing: select * from notification where receiver=? order by gmt_create DESC limit ?,?
+2022-05-24 20:02:23.293 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.list       : ==> Parameters: 19(Long), 0(Integer), 5(Integer)
+2022-05-24 20:02:23.294 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.list       : <==      Total: 5
+2022-05-24 20:02:23.295 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.count      : ==>  Preparing: select count(1) from notification where receiver = 19
+2022-05-24 20:02:23.295 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.count      : ==> Parameters: 
+2022-05-24 20:02:23.296 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.notificationMapper.count      : <==      Total: 1
+2022-05-24 20:02:23.320 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.320 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.322 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.322 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.322 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.323 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.323 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.323 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.323 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.324 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.325 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.326 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.327 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.327 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.327 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.327 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.328 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.328 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.329 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.329 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.329 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.329 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.330 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.331 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.331 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.331 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.332 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.332 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.332 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.333 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.333 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.333 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.333 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.333 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.334 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.334 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.334 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.334 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-3] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.335 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.336 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.336 DEBUG 9792 --- [http-nio-80-exec-2] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.337 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.337 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.338 DEBUG 9792 --- [http-nio-80-exec-3] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.338 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.339 DEBUG 9792 --- [http-nio-80-exec-9] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.356 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.356 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.357 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.357 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.357 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.358 DEBUG 9792 --- [http-nio-80-exec-7] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.380 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-6] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.381 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.382 DEBUG 9792 --- [http-nio-80-exec-5] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.382 DEBUG 9792 --- [http-nio-80-exec-8] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.382 DEBUG 9792 --- [http-nio-80-exec-6] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.394 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.394 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.395 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.395 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.395 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.396 DEBUG 9792 --- [http-nio-80-exec-4] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.401 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.401 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.402 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.402 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.402 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.402 DEBUG 9792 --- [http-nio-80-exec-10] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:23.408 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==>  Preparing: select * from user where token = ?
+2022-05-24 20:02:23.408 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : ==> Parameters: ac58109c-20d8-4262-ba62-352611bc67b3(String)
+2022-05-24 20:02:23.409 DEBUG 9792 --- [http-nio-80-exec-1] com.mapper.userMapper.findByToken        : <==      Total: 1
+2022-05-24 20:02:23.409 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==>  Preparing: select count(1) from notification where receiver = 19 and status=0
+2022-05-24 20:02:23.409 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : ==> Parameters: 
+2022-05-24 20:02:23.409 DEBUG 9792 --- [http-nio-80-exec-1] c.mapper.notificationMapper.unreadCount  : <==      Total: 1
+2022-05-24 20:02:27.925 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:27.925 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:27.927 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:27.927 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:27.927 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:27.929 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:27.929 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:27.929 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:27.930 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:27.931 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:27.931 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:27.932 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:27.932 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:27.932 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:27.933 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:27.933 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:27.933 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:27.935 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:27.935 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:27.936 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:27.937 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:27.938 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:27.938 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:27.939 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:30.479 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:02:30.479 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.getById        : ==> Parameters: 81(Long)
+2022-05-24 20:02:30.480 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:02:30.481 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:30.481 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:30.482 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:30.483 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:02:30.483 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.incView        : ==> Parameters: 81(Long)
+2022-05-24 20:02:30.496 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:02:30.496 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:02:30.497 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.commentList     : ==> Parameters: 81(Long)
+2022-05-24 20:02:30.497 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.commentMapper.commentList     : <==      Total: 1
+2022-05-24 20:02:30.497 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:30.498 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:30.498 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:30.498 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=81
+2022-05-24 20:02:30.499 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.selectRelated  : ==> Parameters: javascript(String)
+2022-05-24 20:02:30.500 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.selectRelated  : <==      Total: 1
+2022-05-24 20:02:32.258 ERROR 9792 --- [http-nio-80-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-9] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) [thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) [spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "pagination.data" (template: "index" - line 15, col 28)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "pagination.data" (template: "index" - line 15, col 28)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'data' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 70 common frames omitted
+
+2022-05-24 20:02:32.260 ERROR 9792 --- [http-nio-80-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'data' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.18.jar:5.3.18]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.StandardEachTagProcessor.doProcess(StandardEachTagProcessor.java:73) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.18.jar:5.3.18]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.60.jar:9.0.60]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_322]
+
+2022-05-24 20:02:35.344 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:35.344 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:35.346 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:35.348 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:35.348 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:35.350 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:35.351 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:35.351 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:35.352 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:35.352 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:35.352 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:35.353 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:35.354 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:35.354 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:35.355 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:35.355 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:35.355 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:35.356 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:35.356 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:35.356 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:35.357 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:35.358 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:35.358 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:35.359 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:50.183 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:02:50.183 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : ==> Parameters: 76(Long)
+2022-05-24 20:02:50.184 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:02:50.184 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.185 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.186 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.186 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:02:50.186 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : ==> Parameters: 76(Long)
+2022-05-24 20:02:50.189 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:02:50.189 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:02:50.189 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : ==> Parameters: 76(Long)
+2022-05-24 20:02:50.192 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.commentMapper.commentList     : <==      Total: 15
+2022-05-24 20:02:50.192 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.193 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.194 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.195 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.195 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.196 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.197 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.197 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.197 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.197 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.198 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.198 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.198 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.199 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.199 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.199 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.199 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.200 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.200 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.200 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.201 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.201 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.201 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.202 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.202 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.202 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.203 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.203 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.203 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.203 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.204 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.204 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.204 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.205 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.205 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.206 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.206 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.206 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.207 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.207 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.207 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.207 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.208 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:50.208 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:50.208 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:50.208 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=76
+2022-05-24 20:02:50.208 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : ==> Parameters: html5,ruby(String)
+2022-05-24 20:02:50.209 DEBUG 9792 --- [http-nio-80-exec-4] com.mapper.questionMapper.selectRelated  : <==      Total: 0
+2022-05-24 20:02:51.689 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:51.689 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:51.690 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:51.691 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:51.691 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:51.692 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:51.692 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:51.692 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:51.693 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:51.693 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:51.694 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:51.694 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:51.694 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:51.695 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:51.696 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:51.696 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:51.696 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:51.697 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:51.698 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:51.698 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:51.698 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:51.699 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:51.699 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:51.700 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:52.687 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:02:52.687 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : ==> Parameters: 80(Long)
+2022-05-24 20:02:52.688 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:02:52.688 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:52.688 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:52.689 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:52.689 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:02:52.690 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : ==> Parameters: 80(Long)
+2022-05-24 20:02:52.702 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:02:52.702 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:02:52.703 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : ==> Parameters: 80(Long)
+2022-05-24 20:02:52.703 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : <==      Total: 1
+2022-05-24 20:02:52.704 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:52.704 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:52.704 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:52.705 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=80
+2022-05-24 20:02:52.705 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : ==> Parameters: javascript(String)
+2022-05-24 20:02:52.705 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : <==      Total: 1
+2022-05-24 20:02:54.514 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:54.514 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:54.515 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:54.515 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:02:54.516 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:02:54.517 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:02:54.517 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:54.517 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:54.518 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:54.518 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:54.518 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:54.519 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:54.519 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:54.520 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:54.520 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:54.520 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:54.521 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:54.521 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:54.521 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:54.522 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:54.522 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:54.523 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:02:54.523 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:02:54.524 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:02:59.487 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:02:59.488 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.getById        : ==> Parameters: 81(Long)
+2022-05-24 20:02:59.489 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:02:59.489 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:59.489 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:59.490 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:59.490 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:02:59.490 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.incView        : ==> Parameters: 81(Long)
+2022-05-24 20:02:59.502 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:02:59.502 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:02:59.502 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.commentMapper.commentList     : ==> Parameters: 81(Long)
+2022-05-24 20:02:59.503 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.commentMapper.commentList     : <==      Total: 1
+2022-05-24 20:02:59.503 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:02:59.503 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:02:59.504 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:02:59.504 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=81
+2022-05-24 20:02:59.504 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.selectRelated  : ==> Parameters: javascript(String)
+2022-05-24 20:02:59.505 DEBUG 9792 --- [http-nio-80-exec-2] com.mapper.questionMapper.selectRelated  : <==      Total: 1
+2022-05-24 20:03:00.328 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:00.328 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:00.329 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:00.330 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:03:00.330 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:03:00.331 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:03:00.331 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:00.331 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:00.332 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:00.332 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:00.332 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:00.333 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:00.333 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:00.333 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:00.334 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:00.334 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:00.334 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:00.335 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:00.335 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:00.335 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:00.336 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:00.336 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:00.336 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:00.338 DEBUG 9792 --- [http-nio-80-exec-8] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:02.200 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:03:02.200 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.getById        : ==> Parameters: 80(Long)
+2022-05-24 20:03:02.201 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:03:02.201 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:02.201 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:02.202 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:02.202 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:03:02.202 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.incView        : ==> Parameters: 80(Long)
+2022-05-24 20:03:02.215 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:03:02.215 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:03:02.215 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.commentMapper.commentList     : ==> Parameters: 80(Long)
+2022-05-24 20:03:02.216 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.commentMapper.commentList     : <==      Total: 1
+2022-05-24 20:03:02.216 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:02.216 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:02.216 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:02.216 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=80
+2022-05-24 20:03:02.217 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.selectRelated  : ==> Parameters: javascript(String)
+2022-05-24 20:03:02.217 DEBUG 9792 --- [http-nio-80-exec-9] com.mapper.questionMapper.selectRelated  : <==      Total: 1
+2022-05-24 20:03:04.040 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:04.041 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:04.042 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:04.042 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:03:04.042 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:03:04.043 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:03:04.043 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:04.043 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:04.043 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:04.043 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:04.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:04.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:04.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:04.044 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:04.045 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:04.045 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:04.045 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:04.046 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:04.047 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:04.047 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:04.047 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:04.047 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:04.048 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:04.049 DEBUG 9792 --- [http-nio-80-exec-10] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:05.822 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : ==>  Preparing: select * from question where id=?
+2022-05-24 20:03:05.822 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : ==> Parameters: 76(Long)
+2022-05-24 20:03:05.823 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.getById        : <==      Total: 1
+2022-05-24 20:03:05.823 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.823 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.824 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.824 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : ==>  Preparing: update question set view_count = view_count+1 where id=?
+2022-05-24 20:03:05.824 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : ==> Parameters: 76(Long)
+2022-05-24 20:03:05.836 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.incView        : <==    Updates: 1
+2022-05-24 20:03:05.836 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : ==>  Preparing: select * from comment where parent_id=? and type=1 order by gmt_create DESC
+2022-05-24 20:03:05.836 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : ==> Parameters: 76(Long)
+2022-05-24 20:03:05.837 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.commentMapper.commentList     : <==      Total: 15
+2022-05-24 20:03:05.837 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.837 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.838 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.838 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.838 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.839 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.839 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.839 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.840 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.840 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.840 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.840 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.841 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.841 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.841 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.841 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.841 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.842 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.843 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.843 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.843 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.844 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.844 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.844 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.845 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.845 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.845 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.845 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.846 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.846 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.846 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.846 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.846 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.847 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.847 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.847 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : ==>  Preparing: select * from question where tag like ? and id !=76
+2022-05-24 20:03:05.848 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : ==> Parameters: html5,ruby(String)
+2022-05-24 20:03:05.849 DEBUG 9792 --- [http-nio-80-exec-7] com.mapper.questionMapper.selectRelated  : <==      Total: 0
+2022-05-24 20:03:06.635 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:06.635 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:06.636 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:06.636 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : ==>  Preparing: select * from question order by gmt_create DESC limit ?,?
+2022-05-24 20:03:06.637 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : ==> Parameters: 0(Integer), 5(Integer)
+2022-05-24 20:03:06.638 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.list           : <==      Total: 5
+2022-05-24 20:03:06.638 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:06.638 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:06.639 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:06.639 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:06.639 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:06.639 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:06.640 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:06.640 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:06.640 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:06.640 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:06.640 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:06.641 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:06.641 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==>  Preparing: select * from user where id = ?
+2022-05-24 20:03:06.641 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : ==> Parameters: 19(Long)
+2022-05-24 20:03:06.642 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.userMapper.findById           : <==      Total: 1
+2022-05-24 20:03:06.642 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==>  Preparing: select count(1) from question
+2022-05-24 20:03:06.642 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : ==> Parameters: 
+2022-05-24 20:03:06.642 DEBUG 9792 --- [http-nio-80-exec-5] com.mapper.questionMapper.count          : <==      Total: 1
+2022-05-24 20:03:51.012  INFO 9792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-24 20:03:51.017  INFO 9792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

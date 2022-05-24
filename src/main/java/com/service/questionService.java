@@ -73,6 +73,7 @@ public class questionService {
      * 主页获取所有问题列表展示
      */
     public PaginationDTO getList(Integer page, Integer size) {
+
         Integer offSet = size*(page-1);
         List<Question> questionList = questionMapper.list(offSet,size);
         PaginationDTO<Question> paginationDTO = new PaginationDTO<>();
@@ -125,5 +126,24 @@ public class questionService {
      */
     public void incView(Long id) {
         questionMapper.incView(id);
+    }
+
+    /**
+     * 查询
+     */
+    public PaginationDTO getSearch(String search, Integer page, Integer size) {
+        Integer offSet = size*(page-1);
+        List<Question> questionList = questionMapper.searchList(search,offSet,size);
+        PaginationDTO<Question> paginationDTO = new PaginationDTO<>();
+        for (Question question : questionList) {
+            User user = userMapper.findById(question.getCreator());
+            question.setUser(user);
+        }
+        paginationDTO.setData(questionList);
+        // 数据总条数
+        Integer totalCount = questionMapper.searchCount(search);
+        paginationDTO.setPagination(totalCount,page,size);
+
+        return paginationDTO;
     }
 }
