@@ -6,6 +6,8 @@ import com.dto.PaginationDTO;
 import com.enity.Notification;
 import com.enity.Question;
 import com.enity.User;
+import com.exception.CustomizeException;
+import com.exception.ErrorCode;
 import com.service.NotificationService;
 import com.service.questionService;
 import org.springframework.stereotype.Controller;
@@ -37,7 +39,7 @@ public class ProfileController {
         User user = (User) request.getSession().getAttribute("user");
         if (user == null)
         {
-            return "redirect:/";
+           throw new CustomizeException(ErrorCode.NO_LOGIN);
         }
 
         if ("questions".equals(action)){

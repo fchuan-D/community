@@ -26,6 +26,7 @@ public class githubService {
         accessToken.setClient_id(clientId);
         accessToken.setClient_secret(clientSecret);
         accessToken.setRedirect_uri(redirectUri);
+
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
         OkHttpClient client = new OkHttpClient();
 
@@ -39,7 +40,7 @@ public class githubService {
             String token = string.split("&")[0].split("=")[1];
             return token;
         } catch (Exception e) {
-//            log.error("getAccessToken error,{}", accessTokenDTO, e);
+            log.error("getAccessToken error,{}", accessToken, e);
         }
         return null;
     }

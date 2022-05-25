@@ -29,8 +29,8 @@ function comment2target(targetId, type, content) {
                 if (response.code == 2003) {
                     var isAccepted = confirm(response.message);
                     if (isAccepted) {
-                        $('#myModal').modal({});
-                        window.open("https://gitee.com/oauth/authorize?client_id=6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069&redirect_uri=http://localhost:80/callback&response_type=code&state=1");
+                        //$('#myModal').modal({});
+                        //window.open("https://github.com/login/oauth/authorize?client_id=97837cb52c1228e8321c&redirect_uri=http://124.221.147.9:8080/callback&response_type=code&state=0");
                         window.localStorage.setItem("closable", true);
                     }
                 } else {

@@ -2,16 +2,10 @@
 // @email:945001786@qq.com
 package com.controller;
 
-import com.dto.ResultDTO;
 import com.enity.Notification;
 import com.enity.User;
-import com.enums.NotificationStatusEnum;
-import com.enums.NotificationTypeEnum;
-import com.exception.ErrorCode;
-import com.mapper.notificationMapper;
 import com.service.NotificationService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 

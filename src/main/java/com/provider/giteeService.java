@@ -21,6 +21,10 @@ public class giteeService {
     private String redirectUri;
 
     public String getAccessToken(accessToken accessToken) {
+        accessToken.setRedirect_uri(redirectUri);
+        accessToken.setClient_secret(clientSecret);
+        accessToken.setClient_id(clientId);
+
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.create(mediaType, JSON.toJSONString(accessToken));

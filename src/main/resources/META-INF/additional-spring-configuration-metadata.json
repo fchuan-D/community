@@ -1,0 +1,53 @@
+{
+  "properties": [
+    {
+      "name": "gitee.client.id",
+      "type": "java.lang.String",
+      "description": "Description for gitee.client.id."
+    },
+    {
+      "name": "gitee.client.secret",
+      "type": "java.lang.String",
+      "description": "Description for gitee.client.secret."
+    },
+    {
+      "name": "gitee.redirect.uri",
+      "type": "java.lang.String",
+      "description": "Description for gitee.redirect.uri."
+    },
+    {
+      "name": "qcloud.qfile.SecretId",
+      "type": "java.lang.String",
+      "description": "Description for qcloud.qfile.SecretId."
+    },
+    {
+      "name": "qcloud.qfile.SecretKey",
+      "type": "java.lang.String",
+      "description": "Description for qcloud.qfile.SecretKey."
+    },
+    {
+      "name": "qcloud.qfile.bucketName",
+      "type": "java.lang.String",
+      "description": "Description for qcloud.qfile.bucketName."
+    },
+    {
+      "name": "qcloud.qfile.region",
+      "type": "java.lang.String",
+      "description": "Description for qcloud.qfile.region."
+    },
+    {
+      "name": "github.client.id",
+      "type": "java.lang.String",
+      "description": "Description for github.client.id."
+    },
+    {
+      "name": "github.client.secret",
+      "type": "java.lang.String",
+      "description": "Description for github.client.secret."
+    },
+    {
+      "name": "github.redirect.uri",
+      "type": "java.lang.String",
+      "description": "Description for github.redirect.uri."
+    }
+  ] }

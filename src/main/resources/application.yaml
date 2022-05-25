@@ -1,28 +1,28 @@
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/community
-    username: root
-    password: password
-
-  thymeleaf:
-    cache: false
-    check-template: true
-    check-template-location: true
-    servlet.content-type: text/html
-    encoding: utf-8
-    mode: HTML
-    prefix: classpath:/templates/
-    suffix: .html
-
-  devtools:
-    restart:
-      enabled: true  #设置开启热部署
-      additional-paths: src/main/java #重启目录
-      exclude: WEB-INF/static/**
-
-  freemarker:
-    cache: false    #页面不加载缓存，修改即时生效
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://124.221.147.9:3306/community
+#    username: root
+#    password: password
+#
+#  thymeleaf:
+#    cache: false
+#    check-template: true
+#    check-template-location: true
+#    servlet.content-type: text/html
+#    encoding: utf-8
+#    mode: HTML
+#    prefix: classpath:/templates/
+#    suffix: .html
+#
+#  devtools:
+#    restart:
+#      enabled: true  #设置开启热部署
+#      additional-paths: src/main/java #重启目录
+#      exclude: WEB-INF/static/**
+#
+#  freemarker:
+#    cache: false    #页面不加载缓存，修改即时生效
 
 
 
