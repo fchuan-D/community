@@ -3,6 +3,8 @@
 package com.provider;
 
 import com.alibaba.fastjson.JSON;
+import com.exception.CustomizeException;
+import com.exception.ErrorCode;
 import com.provider.dto.GithubUser;
 import com.enity.accessToken;
 import lombok.extern.slf4j.Slf4j;
@@ -41,8 +43,8 @@ public class githubService {
             return token;
         } catch (Exception e) {
             log.error("getAccessToken error,{}", accessToken, e);
+            throw new CustomizeException(ErrorCode.LOGIN_FAIL);
         }
-        return null;
     }
 
 
@@ -59,7 +61,7 @@ public class githubService {
             return githubUser;
         } catch (Exception e) {
             log.error("getUser error,{}", accessToken, e);
+            throw new CustomizeException(ErrorCode.LOGIN_FAIL);
         }
-        return null;
     }
 }

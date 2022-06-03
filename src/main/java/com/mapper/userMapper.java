@@ -24,6 +24,6 @@ public interface userMapper extends BaseMapper<User> {
     @Select("Select * from user where account_id = #{accountId}")
     User findByAccountId(Long accountId);
 
-    @Update("update user set token = #{token},gmt_modified = #{gmtModified},name=#{name},avatar_url=#{avatarUrl}")
+    @Update("update user set token = #{token},gmt_modified = #{gmtModified},name = #{name},avatar_url = #{avatarUrl} where account_id = #{accountId}")
     void update(User user);
 }

@@ -50,6 +50,8 @@ public class AuthorizeController {
 
             if (userMapper.findByAccountId(githubUser.getId()) != null) {
                 userMapper.update(user);
+                // 发送token给浏览器
+                response.addCookie(new Cookie("token", userToken));
             } else {
                 if (user.getName() == null){
                     int random = (int)(Math.random()*10);
@@ -59,9 +61,9 @@ public class AuthorizeController {
                     user.setAvatarUrl("/static/images/default-avatar.png");
                 }
                 userMapper.insert(user);
+                // 发送token给浏览器
+                response.addCookie(new Cookie("token", userToken));
             }
-            // 发送token给浏览器
-            response.addCookie(new Cookie("token", userToken));
         }else{
             // 登录失败
             throw new CustomizeException(ErrorCode.LOGIN_FAIL);
