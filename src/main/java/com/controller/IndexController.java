@@ -3,6 +3,7 @@
 package com.controller;
 
 import com.dto.PaginationDTO;
+import com.enity.Question;
 import com.exception.CustomizeException;
 import com.exception.ErrorCode;
 import com.mapper.questionMapper;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
 @Controller
@@ -45,6 +47,8 @@ public class IndexController {
             throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
         }
         PaginationDTO pagination = questionService.getList(page, size);
+        List<Question> hotQues = questionService.getHotList(5);
+        model.addAttribute("hotQues", hotQues);
         model.addAttribute("search", search);
         model.addAttribute("pagination",pagination);
         request.getSession().setAttribute("redirectUri", redirectUri);

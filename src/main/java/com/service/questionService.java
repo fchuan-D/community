@@ -146,4 +146,11 @@ public class questionService {
 
         return paginationDTO;
     }
+
+    /**
+     * 返回最热问题
+     */
+    public List<Question> getHotList(Integer size) {
+        return questionMapper.selectHots(size);
+    }
 }

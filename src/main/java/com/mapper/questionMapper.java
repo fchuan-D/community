@@ -50,4 +50,7 @@ public interface questionMapper extends BaseMapper<Question> {
 
     @Select("select count(1) from question where title like CONCAT(#{search},'%')")
     Integer searchCount(String search);
+
+    @Select("select * from question order by view_count DESC limit 0,#{size}")
+    List<Question> selectHots(Integer size);
 }
