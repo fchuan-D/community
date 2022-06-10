@@ -21,7 +21,7 @@ public class CommentController {
     @Resource
     private commentService commentService;
 
-    // 接受问题回复
+    // 发布问题
     @ResponseBody
     @RequestMapping(value = "/comment",method = RequestMethod.POST)
     public Object post(@RequestBody CommentDTO commentDTO, HttpServletRequest request){

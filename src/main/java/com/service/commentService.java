@@ -45,7 +45,7 @@ public class commentService {
             throw new CustomizeException(ErrorCode.TYPE_PARAM_WRONG);
         }
         // 评论评论
-        if (comment.getType() == CommentTypeEnum.COMMENT.getType()) {
+        if (comment.getType().equals(CommentTypeEnum.COMMENT.getType())) {
             // 被回复评论
             Comment parentComment = commentMapper.getById(comment.getParentId());
             if (parentComment == null) {
@@ -78,7 +78,6 @@ public class commentService {
 
             // 创建通知——>被回复问题者
             createNotify(comment, parentQuestion.getCreator(), commentator.getName(), parentQuestion.getTitle(), NotificationTypeEnum.REPLY_QUESTION, parentQuestion.getId());
-
         }
     }
 
@@ -86,10 +85,9 @@ public class commentService {
      * 创建通知,重构获取回复或评论的发表者和类型
      */
     private void createNotify(Comment comment, Long receiver, String notifierName, String outerTitle, NotificationTypeEnum notificationType, Long outerId) {
-//        if (receiver == comment.getCommentator()) {
-//            System.out.println("return");
-//            return;
-//        }
+        if (receiver.equals(comment.getCommentator())) {
+            return;
+        }
         Notification notification = new Notification();
         notification.setGmtCreate(System.currentTimeMillis());
         notification.setType(notificationType.getType());
@@ -104,7 +102,7 @@ public class commentService {
     }
 
     /**
-     * 查询某一问题下的所有评论
+     * 查询某问题下的所有评论
      */
     public List<Comment> getListByQId(Long parentId) {
         List<Comment> comments = commentMapper.commentList(parentId,CommentTypeEnum.QUESTION);
