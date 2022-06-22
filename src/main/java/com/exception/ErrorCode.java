@@ -1,7 +1,6 @@
 package com.exception;
 
 public enum ErrorCode implements IErrorCode{
-
     QUESTION_NOT_CREATE(1,"问题发布失败,重新试试?"),
     QUESTION_NOT_FOUND(2,"你找的问题不存在,换个试试?"),
     PAGE_NOT_FOUND(3,"该页码不存在,请重试!"),
@@ -19,7 +18,10 @@ public enum ErrorCode implements IErrorCode{
     INVALID_OPERATION(2012, "兄弟,是不是走错房间了？"),
     USER_DISABLE(2013, "操作被禁用,如有疑问请联系管理员"),
     RATE_LIMIT(2014, "操作太快了,请稍后重试"),
-    LOGIN_FAIL(2015, "登陆失败,网络不稳定,请稍后再试");
+    LOGIN_FAIL(2015, "登陆失败,网络不稳定,请稍后再试"),
+    FAIL_SPIDER(2016,"热搜爬取失败"),
+    FAIL_GET(2017,"热搜请求失败"),
+    FAIL_SPIDER_PARSE(2018, "爬虫解析失败");
 
     private final Integer code;
 

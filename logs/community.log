@@ -1,180 +1,806 @@
-2022-06-10 14:56:40.945  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9484 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 14:56:40.952  INFO 9484 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 14:56:40.993  INFO 9484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-10 14:56:40.993  INFO 9484 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-10 14:56:43.213  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 14:56:43.222  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 14:56:43.222  INFO 9484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 14:56:43.301  INFO 9484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-10 14:56:43.301  INFO 9484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2307 ms
-2022-06-10 14:56:44.216  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 14:56:44.226  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 14:56:44.283  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 14:56:44.310  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 14:56:44.338  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 14:56:44.510  INFO 9484 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-06-10 14:56:44.695  INFO 9484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-06-10 14:56:44.722  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-06-10 14:56:44.731  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.229 seconds (JVM running for 5.272)
-2022-06-10 14:56:51.595  INFO 9484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 14:56:51.596  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 14:56:51.597  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-06-10 14:56:51.642  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-06-10 14:56:51.889  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-06-10 14:59:56.991  INFO 9484 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-06-10 14:59:57.219  INFO 9484 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-06-10 14:59:57.533  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9484 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 14:59:57.533  INFO 9484 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 14:59:59.207  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 14:59:59.207  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 14:59:59.207  INFO 9484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 14:59:59.224  INFO 9484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-10 14:59:59.224  INFO 9484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1685 ms
-2022-06-10 14:59:59.535  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 14:59:59.537  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 14:59:59.555  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 14:59:59.574  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 14:59:59.599  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 14:59:59.655  INFO 9484 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-06-10 14:59:59.742  INFO 9484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-06-10 14:59:59.753  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-06-10 14:59:59.757  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.261 seconds (JVM running for 200.298)
-2022-06-10 14:59:59.759  INFO 9484 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-06-10 15:00:00.462  INFO 9484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 15:00:00.462  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 15:00:00.463  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-06-10 15:00:00.465  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-06-10 15:00:00.485  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2022-06-10 15:06:17.318  INFO 9484 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2022-06-10 15:06:17.327  INFO 9484 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2022-06-10 15:06:17.496  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9484 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 15:06:17.496  INFO 9484 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 15:06:20.398  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 15:06:20.400  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 15:06:20.400  INFO 9484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 15:06:20.652  INFO 9484 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-10 15:06:20.655  INFO 9484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3156 ms
-2022-06-10 15:06:21.411  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:06:21.414  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:06:21.434  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:06:21.456  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:06:21.485  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 15:06:21.495  WARN 9484 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'profileController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.service.questionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-06-10 15:06:21.496  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-06-10 15:06:21.505  INFO 9484 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-06-10 15:06:21.529 ERROR 9484 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.service.questionService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.service.questionService' in your configuration.
-
-2022-06-10 15:06:23.080  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9484 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 15:06:23.081  INFO 9484 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 15:06:24.418  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 15:06:24.418  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 15:06:24.418  INFO 9484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 15:06:24.432  INFO 9484 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-06-10 15:06:24.433  INFO 9484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
-2022-06-10 15:06:24.735  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:06:24.737  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:06:24.754  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:06:24.773  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:06:24.794  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 15:06:24.832  INFO 9484 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-06-10 15:06:24.869  INFO 9484 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-06-10 15:06:24.876  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-06-10 15:06:24.882  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 1.818 seconds (JVM running for 585.421)
-2022-06-10 15:06:24.884  INFO 9484 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-06-10 15:06:24.972  INFO 9484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 15:06:24.973  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 15:06:24.973  INFO 9484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-06-10 15:06:24.975  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2022-06-10 15:06:24.997  INFO 9484 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2022-06-10 15:08:12.703  INFO 9484 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2022-06-10 15:08:12.713  INFO 9484 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2022-06-10 15:08:12.956  INFO 9484 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9484 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 15:08:12.957  INFO 9484 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 15:08:15.036  INFO 9484 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 15:08:15.037  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 15:08:15.037  INFO 9484 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 15:08:15.052  INFO 9484 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2022-06-10 15:08:15.052  INFO 9484 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2093 ms
-2022-06-10 15:08:15.427  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:08:15.429  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:08:15.452  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:08:15.476  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:08:15.506  WARN 9484 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 15:08:15.514  WARN 9484 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'profileController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.service.questionService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
-2022-06-10 15:08:15.514  INFO 9484 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-06-10 15:08:15.520  INFO 9484 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-06-10 15:08:15.522 ERROR 9484 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.service.questionService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.service.questionService' in your configuration.
-
-2022-06-10 15:08:32.545  INFO 11476 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 11476 (D:\community\target\classes started by 樊川 in D:\community)
-2022-06-10 15:08:32.546  INFO 11476 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 15:08:32.582  INFO 11476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-06-10 15:08:32.582  INFO 11476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-06-10 15:08:34.711  INFO 11476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-06-10 15:08:34.718  INFO 11476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-10 15:08:34.719  INFO 11476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-06-10 15:08:34.795  INFO 11476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-10 15:08:34.796  INFO 11476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2213 ms
-2022-06-10 15:08:35.665  WARN 11476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:08:35.678  WARN 11476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:08:35.733  WARN 11476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:08:35.767  WARN 11476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:08:35.800  WARN 11476 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 15:08:35.987  INFO 11476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-06-10 15:08:36.182  INFO 11476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-06-10 15:08:36.210  INFO 11476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-06-10 15:08:36.218  INFO 11476 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.044 seconds (JVM running for 5.379)
-2022-06-10 15:08:41.770  INFO 11476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-10 15:08:41.771  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-10 15:08:41.771  INFO 11476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-06-10 15:08:41.806  INFO 11476 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-06-10 15:08:42.005  INFO 11476 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-06-10 15:16:34.715  INFO 11476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-06-10 15:16:34.736  INFO 11476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-06-10 15:17:18.147  WARN 10048 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/D:/Environment/apache-maven/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/D:/Environment/apache-maven/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-2022-06-10 15:17:18.185  INFO 10048 --- [main] c.e.community.CommunityApplicationTests  : Starting CommunityApplicationTests using Java 1.8.0_322 on ���� with PID 10048 (started by ���� in D:\community)
-2022-06-10 15:17:18.186  INFO 10048 --- [main] c.e.community.CommunityApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2022-06-10 15:17:21.518  WARN 10048 --- [main] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:17:21.529  WARN 10048 --- [main] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:17:21.615  WARN 10048 --- [main] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
-2022-06-10 15:17:21.661  WARN 10048 --- [main] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
-2022-06-10 15:17:21.707  WARN 10048 --- [main] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
-2022-06-10 15:17:22.224  INFO 10048 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-06-10 15:17:22.598  INFO 10048 --- [main] c.e.community.CommunityApplicationTests  : Started CommunityApplicationTests in 4.738 seconds (JVM running for 5.678)
+2022-06-22 10:20:13.123  INFO 28024 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 28024 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:20:13.128  INFO 28024 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:20:13.187  INFO 28024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:20:13.188  INFO 28024 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:20:15.921  INFO 28024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:20:15.931  INFO 28024 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:20:15.931  INFO 28024 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:20:16.022  INFO 28024 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:20:16.023  INFO 28024 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2834 ms
+2022-06-22 10:20:16.984  WARN 28024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:20:16.994  WARN 28024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:20:17.052  WARN 28024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:20:17.083  WARN 28024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:20:17.116  WARN 28024 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:20:17.306  INFO 28024 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:20:17.527  INFO 28024 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:20:17.559  INFO 28024 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:20:17.574  INFO 28024 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.167 seconds (JVM running for 8.117)
+2022-06-22 10:20:32.684  INFO 28024 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:20:32.685  INFO 28024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:20:32.686  INFO 28024 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 10:20:32.736  INFO 28024 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 10:20:32.963  INFO 28024 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 10:22:01.181  INFO 28024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 10:22:01.202  INFO 28024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 10:22:13.829  INFO 29976 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 29976 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:22:13.831  INFO 29976 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:22:13.890  INFO 29976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:22:13.891  INFO 29976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:22:16.507  INFO 29976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:22:16.514  INFO 29976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:22:16.514  INFO 29976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:22:16.596  INFO 29976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:22:16.596  INFO 29976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2704 ms
+2022-06-22 10:22:17.548  WARN 29976 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:22:17.559  WARN 29976 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:22:17.615  WARN 29976 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:22:17.647  WARN 29976 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:22:17.682  WARN 29976 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:22:17.872  INFO 29976 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:22:18.089  INFO 29976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:22:18.120  INFO 29976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:22:18.130  INFO 29976 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.937 seconds (JVM running for 6.412)
+2022-06-22 10:22:22.664  INFO 29976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:22:22.664  INFO 29976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:22:22.665  INFO 29976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 10:22:22.698  INFO 29976 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 10:22:22.892  INFO 29976 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 10:22:27.701  WARN 29976 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.String;]
+2022-06-22 10:25:58.258  WARN 29976 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.String;]
+2022-06-22 10:26:06.170  WARN 29976 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.String;]
+2022-06-22 10:26:51.258  INFO 29976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 10:26:51.274  INFO 29976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 10:26:55.585  INFO 14068 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 14068 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:26:55.588  INFO 14068 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:26:55.705  INFO 14068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:26:55.706  INFO 14068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:26:58.778  INFO 14068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:26:58.788  INFO 14068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:26:58.789  INFO 14068 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:26:58.902  INFO 14068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:26:58.902  INFO 14068 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3195 ms
+2022-06-22 10:26:59.864  WARN 14068 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:26:59.875  WARN 14068 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:26:59.941  WARN 14068 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:26:59.976  WARN 14068 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:27:00.016  WARN 14068 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:27:00.270  INFO 14068 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:27:00.535  INFO 14068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:27:00.571  INFO 14068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:27:00.583  INFO 14068 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 6.141 seconds (JVM running for 8.132)
+2022-06-22 10:27:04.141  INFO 14068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:27:04.142  INFO 14068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:27:04.142  INFO 14068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-22 10:28:03.420  WARN 14068 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: [Ljava.lang.Object; cannot be cast to [Ljava.lang.String;]
+2022-06-22 10:33:56.138  INFO 30328 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 30328 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:33:56.140  INFO 30328 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:33:56.187  INFO 30328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:33:56.188  INFO 30328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:33:58.429  INFO 30328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:33:58.450  INFO 30328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:33:58.451  INFO 30328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:33:58.533  INFO 30328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:33:58.534  INFO 30328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2346 ms
+2022-06-22 10:33:59.318  WARN 30328 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:33:59.327  WARN 30328 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:33:59.375  WARN 30328 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:33:59.403  WARN 30328 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:33:59.434  WARN 30328 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:33:59.631  INFO 30328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:33:59.831  INFO 30328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:33:59.859  INFO 30328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:33:59.869  INFO 30328 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.227 seconds (JVM running for 5.283)
+2022-06-22 10:34:11.956  INFO 30328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:34:11.956  INFO 30328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:34:11.957  INFO 30328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 10:34:11.996  INFO 30328 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 10:34:12.223  INFO 30328 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 10:35:07.301  INFO 30328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 10:35:07.313  INFO 30328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 10:37:09.479  INFO 15792 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 15792 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:37:09.481  INFO 15792 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:37:09.573  INFO 15792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:37:09.573  INFO 15792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:37:12.806  INFO 15792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:37:12.814  INFO 15792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:37:12.814  INFO 15792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:37:12.897  INFO 15792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:37:12.898  INFO 15792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3324 ms
+2022-06-22 10:37:13.806  WARN 15792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:37:13.819  WARN 15792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:37:13.883  WARN 15792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:37:13.922  WARN 15792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:37:13.962  WARN 15792 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:37:14.201  INFO 15792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:37:14.456  INFO 15792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:37:14.490  INFO 15792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:37:14.502  INFO 15792 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.825 seconds (JVM running for 7.537)
+2022-06-22 10:37:16.782  INFO 15792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:37:16.782  INFO 15792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:37:16.783  INFO 15792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 10:37:16.824  INFO 15792 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 10:37:17.048  INFO 15792 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 10:38:12.491  WARN 15792 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exception.CustomizeException: 热搜请求失败]
+2022-06-22 10:38:12.979  INFO 15792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 10:38:12.988  INFO 15792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 10:38:23.019  INFO 30184 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 30184 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 10:38:23.021  INFO 30184 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 10:38:23.080  INFO 30184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 10:38:23.081  INFO 30184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 10:38:26.118  INFO 30184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 10:38:26.131  INFO 30184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 10:38:26.132  INFO 30184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 10:38:26.304  INFO 30184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 10:38:26.305  INFO 30184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3223 ms
+2022-06-22 10:38:28.014  WARN 30184 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:38:28.030  WARN 30184 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:38:28.106  WARN 30184 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 10:38:28.158  WARN 30184 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 10:38:28.208  WARN 30184 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 10:38:28.447  INFO 30184 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 10:38:28.688  INFO 30184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 10:38:28.721  INFO 30184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 10:38:28.732  INFO 30184 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 6.314 seconds (JVM running for 7.982)
+2022-06-22 10:38:33.067  INFO 30184 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 10:38:33.067  INFO 30184 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 10:38:33.068  INFO 30184 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 10:38:33.113  INFO 30184 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 10:38:33.362  INFO 30184 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 11:30:53.491  INFO 30184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 11:30:53.499  INFO 30184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 11:30:57.068  INFO 20912 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 20912 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:30:57.070  INFO 20912 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:30:57.113  INFO 20912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 11:30:57.113  INFO 20912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 11:30:59.320  INFO 20912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:30:59.328  INFO 20912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:30:59.328  INFO 20912 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:30:59.428  INFO 20912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:30:59.428  INFO 20912 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2314 ms
+2022-06-22 11:31:00.223  WARN 20912 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:31:00.233  WARN 20912 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:31:00.282  WARN 20912 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:31:00.309  WARN 20912 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:31:00.339  WARN 20912 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:31:00.529  INFO 20912 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:31:00.733  INFO 20912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:31:00.764  INFO 20912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:31:00.773  INFO 20912 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.16 seconds (JVM running for 5.214)
+2022-06-22 11:31:05.105  INFO 20912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:31:05.105  INFO 20912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:31:05.106  INFO 20912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:33:32.498  INFO 21528 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 21528 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:33:32.499  INFO 21528 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:33:32.549  INFO 21528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 11:33:32.550  INFO 21528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 11:33:34.827  INFO 21528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:33:34.835  INFO 21528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:33:34.835  INFO 21528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:33:34.936  INFO 21528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:33:34.936  INFO 21528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2386 ms
+2022-06-22 11:33:35.722  WARN 21528 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:33:35.732  WARN 21528 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:33:35.781  WARN 21528 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:33:35.808  WARN 21528 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:33:35.837  WARN 21528 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:33:36.030  INFO 21528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:33:36.233  INFO 21528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:33:36.264  INFO 21528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:33:36.274  INFO 21528 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.207 seconds (JVM running for 5.298)
+2022-06-22 11:33:36.307  INFO 21528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:33:36.307  INFO 21528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:33:36.308  INFO 21528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:33:39.888  INFO 6692 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 6692 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:33:39.889  INFO 6692 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:33:39.932  INFO 6692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 11:33:39.933  INFO 6692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 11:33:42.546  INFO 6692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:33:42.567  INFO 6692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:33:42.567  INFO 6692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:33:42.639  INFO 6692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:33:42.639  INFO 6692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2706 ms
+2022-06-22 11:33:43.479  WARN 6692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:33:43.489  WARN 6692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:33:43.539  WARN 6692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:33:43.567  WARN 6692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:33:43.597  WARN 6692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:33:43.800  INFO 6692 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:33:44.018  INFO 6692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:33:44.049  INFO 6692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:33:44.059  INFO 6692 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.634 seconds (JVM running for 6.079)
+2022-06-22 11:33:52.407  INFO 6692 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:33:52.407  INFO 6692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:33:52.408  INFO 6692 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:36:37.125  INFO 17612 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 17612 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:36:37.127  INFO 17612 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:36:37.179  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 11:36:37.179  INFO 17612 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 11:36:39.413  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:36:39.421  INFO 17612 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:36:39.421  INFO 17612 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:36:39.510  INFO 17612 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:36:39.510  INFO 17612 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2330 ms
+2022-06-22 11:36:40.292  WARN 17612 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:36:40.301  WARN 17612 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:36:40.351  WARN 17612 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:36:40.379  WARN 17612 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:36:40.407  WARN 17612 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:36:40.596  INFO 17612 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:36:40.816  INFO 17612 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:36:40.849  INFO 17612 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:36:40.859  INFO 17612 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.289 seconds (JVM running for 5.502)
+2022-06-22 11:36:44.451  INFO 17612 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:36:44.452  INFO 17612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:36:44.453  INFO 17612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:37:41.439  WARN 17612 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.exception.CustomizeException: 热搜请求失败]
+2022-06-22 11:37:54.402  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:37:54.404  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:37:54.452  INFO 9752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 11:37:54.452  INFO 9752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 11:37:56.624  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:37:56.635  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:37:56.635  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:37:56.784  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:37:56.784  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2331 ms
+2022-06-22 11:37:57.643  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:37:57.653  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:37:57.698  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:37:57.723  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:37:57.753  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:37:57.906  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:37:58.102  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:37:58.127  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:37:58.136  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.188 seconds (JVM running for 5.182)
+2022-06-22 11:38:02.787  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:38:02.787  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:38:02.788  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:41:56.022  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:41:56.023  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:41:59.141  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:41:59.142  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:41:59.143  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:41:59.174  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:41:59.175  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3149 ms
+2022-06-22 11:41:59.833  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:41:59.839  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:41:59.872  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:41:59.907  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:41:59.957  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:42:00.062  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:42:00.155  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:42:00.171  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:42:00.177  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.193 seconds (JVM running for 247.224)
+2022-06-22 11:42:00.181  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:42:00.757  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:42:00.758  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:42:00.759  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:42:02.156  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:42:02.157  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:42:03.524  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:42:03.525  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:42:03.525  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:42:03.540  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:42:03.540  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1381 ms
+2022-06-22 11:42:03.860  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:42:03.862  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:42:03.880  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:42:03.897  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:42:03.919  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:42:03.964  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:42:04.006  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:42:04.015  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:42:04.019  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 1.883 seconds (JVM running for 251.066)
+2022-06-22 11:42:04.020  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:42:04.026  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:42:04.027  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:42:04.028  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:42:04.552  INFO 9752 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 11:42:04.677  INFO 9752 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 11:43:25.531  INFO 9752 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 11:43:25.538  INFO 9752 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 11:43:25.768  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:43:25.769  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:43:27.378  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:43:27.379  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:43:27.379  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:43:27.394  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:43:27.395  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1625 ms
+2022-06-22 11:43:27.715  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:43:27.717  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:43:27.732  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:43:27.747  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:43:27.770  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:43:27.818  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:43:27.855  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:43:27.863  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:43:27.866  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.137 seconds (JVM running for 334.913)
+2022-06-22 11:43:27.867  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:43:29.004  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:43:29.005  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:43:29.005  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-22 11:43:29.837  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:43:29.837  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:43:31.091  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:43:31.091  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:43:31.091  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:43:31.105  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:43:31.105  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
+2022-06-22 11:43:31.395  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:43:31.397  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:43:31.413  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:43:31.429  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:43:31.448  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:43:31.485  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:43:31.517  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:43:31.524  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:43:31.527  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 1.706 seconds (JVM running for 338.574)
+2022-06-22 11:43:31.528  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:43:51.462  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:43:51.463  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:43:51.464  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:44:29.953  INFO 9752 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-22 11:44:29.985  INFO 9752 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-22 11:53:26.496  INFO 9752 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-06-22 11:53:26.504  INFO 9752 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-06-22 11:53:27.407  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:53:27.407  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:53:31.807  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:53:31.807  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:53:31.807  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:53:31.830  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:53:31.830  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4417 ms
+2022-06-22 11:53:32.643  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:53:32.647  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:53:32.684  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:53:32.716  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:53:32.762  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:53:32.844  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:53:32.927  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:53:32.942  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:53:32.948  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.757 seconds (JVM running for 939.995)
+2022-06-22 11:53:32.950  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:53:33.884  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:53:33.884  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:53:33.885  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:53:34.960  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9752 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 11:53:34.960  INFO 9752 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 11:53:36.466  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 11:53:36.466  INFO 9752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 11:53:36.467  INFO 9752 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 11:53:36.483  INFO 9752 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 11:53:36.483  INFO 9752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1521 ms
+2022-06-22 11:53:36.814  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:53:36.816  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:53:36.831  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 11:53:36.847  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 11:53:36.868  WARN 9752 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 11:53:36.911  INFO 9752 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 11:53:36.951  INFO 9752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 11:53:36.959  INFO 9752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 11:53:36.964  INFO 9752 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.023 seconds (JVM running for 944.01)
+2022-06-22 11:53:36.964  INFO 9752 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 11:53:36.964  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 11:53:36.965  INFO 9752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 11:53:36.966  INFO 9752 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 11:53:36.967  INFO 9752 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-22 11:53:36.990  INFO 9752 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-22 13:04:36.050  INFO 9752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-06-22 13:04:36.057  INFO 9752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-06-22 13:04:41.198  INFO 25692 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 25692 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 13:04:41.199  INFO 25692 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:04:41.244  INFO 25692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 13:04:41.244  INFO 25692 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 13:04:43.513  INFO 25692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:04:43.522  INFO 25692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 13:04:43.522  INFO 25692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 13:04:43.617  INFO 25692 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 13:04:43.617  INFO 25692 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2372 ms
+2022-06-22 13:04:44.573  WARN 25692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:04:44.586  WARN 25692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:04:44.643  WARN 25692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:04:44.675  WARN 25692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:04:44.706  WARN 25692 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 13:04:44.912  INFO 25692 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 13:04:45.170  INFO 25692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 13:04:45.202  INFO 25692 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:04:45.212  INFO 25692 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.486 seconds (JVM running for 5.509)
+2022-06-22 13:04:46.897  INFO 25692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 13:04:46.897  INFO 25692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 13:04:46.898  INFO 25692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 13:04:46.934  INFO 25692 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 13:04:47.148  INFO 25692 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 13:15:39.326  INFO 25692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 13:15:39.337  INFO 25692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 13:15:48.145  INFO 18676 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 18676 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 13:15:48.146  INFO 18676 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:15:48.196  INFO 18676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 13:15:48.196  INFO 18676 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 13:15:50.367  INFO 18676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:15:50.376  INFO 18676 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 13:15:50.376  INFO 18676 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 13:15:50.465  INFO 18676 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 13:15:50.465  INFO 18676 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2268 ms
+2022-06-22 13:15:51.245  WARN 18676 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:15:51.254  WARN 18676 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:15:51.305  WARN 18676 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:15:51.331  WARN 18676 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:15:51.362  WARN 18676 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 13:15:51.552  INFO 18676 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 13:15:51.753  INFO 18676 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 13:15:51.782  INFO 18676 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:15:51.791  INFO 18676 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.088 seconds (JVM running for 5.207)
+2022-06-22 13:15:58.562  INFO 18676 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 13:15:58.562  INFO 18676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 13:15:58.563  INFO 18676 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 13:15:58.599  INFO 18676 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 13:15:58.829  INFO 18676 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 13:50:56.591  WARN 18676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m57s656ms407µs700ns).
+2022-06-22 13:52:03.731  WARN 18676 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m7s140ms575µs400ns).
+2022-06-22 13:52:04.240  INFO 18676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 13:52:04.248  INFO 18676 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 13:52:09.482  INFO 20984 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 20984 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 13:52:09.484  INFO 20984 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:52:09.535  INFO 20984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 13:52:09.535  INFO 20984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 13:52:11.852  INFO 20984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:52:11.860  INFO 20984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 13:52:11.860  INFO 20984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 13:52:11.949  INFO 20984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 13:52:11.949  INFO 20984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2413 ms
+2022-06-22 13:52:12.753  WARN 20984 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:52:12.763  WARN 20984 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:52:12.827  WARN 20984 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:52:12.856  WARN 20984 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:52:12.886  WARN 20984 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 13:52:13.080  INFO 20984 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 13:52:13.298  INFO 20984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 13:52:13.329  INFO 20984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:52:13.340  INFO 20984 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.393 seconds (JVM running for 5.538)
+2022-06-22 13:52:13.452  INFO 20984 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 13:52:13.453  INFO 20984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 13:52:13.453  INFO 20984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-22 13:52:16.086  INFO 20984 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 13:52:16.300  INFO 20984 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 13:57:05.033  WARN 20984 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m45s942ms392µs400ns).
+2022-06-22 13:57:05.514  INFO 20984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 13:57:05.521  INFO 20984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 13:57:09.061  INFO 27272 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 27272 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 13:57:09.062  INFO 27272 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:57:09.111  INFO 27272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 13:57:09.111  INFO 27272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 13:57:11.486  INFO 27272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:57:11.494  INFO 27272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 13:57:11.494  INFO 27272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 13:57:11.584  INFO 27272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 13:57:11.584  INFO 27272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2472 ms
+2022-06-22 13:57:12.390  WARN 27272 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:57:12.400  WARN 27272 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:57:12.455  WARN 27272 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 13:57:12.485  WARN 27272 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 13:57:12.517  WARN 27272 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 13:57:12.709  INFO 27272 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 13:57:12.918  INFO 27272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 13:57:12.948  INFO 27272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:57:12.957  INFO 27272 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.319 seconds (JVM running for 5.463)
+2022-06-22 13:57:13.052  INFO 27272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 13:57:13.052  INFO 27272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 13:57:13.053  INFO 27272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 13:58:21.609  INFO 27272 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 13:58:21.822  INFO 27272 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 13:59:08.372  WARN 27272 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s445ms106µs100ns).
+2022-06-22 14:03:47.790  WARN 27272 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m39s417ms805µs600ns).
+2022-06-22 14:03:48.179  INFO 27272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:03:48.188  INFO 27272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:03:53.371  INFO 24964 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 24964 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:03:53.373  INFO 24964 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:03:53.418  INFO 24964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:03:53.418  INFO 24964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:03:55.756  INFO 24964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:03:55.764  INFO 24964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:03:55.765  INFO 24964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:03:55.854  INFO 24964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:03:55.855  INFO 24964 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2436 ms
+2022-06-22 14:03:56.656  WARN 24964 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:03:56.666  WARN 24964 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:03:56.723  WARN 24964 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:03:56.751  WARN 24964 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:03:56.780  WARN 24964 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:03:57.036  INFO 24964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:03:57.384  INFO 24964 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:03:57.426  INFO 24964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:03:57.436  INFO 24964 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.514 seconds (JVM running for 5.531)
+2022-06-22 14:03:57.626  INFO 24964 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:03:57.626  INFO 24964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:03:57.628  INFO 24964 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-22 14:03:59.327  INFO 24964 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:03:59.536  INFO 24964 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:04:37.291  WARN 24964 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArrayIndexOutOfBoundsException: 1]
+2022-06-22 14:04:51.658  INFO 24964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:04:51.685  INFO 24964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:04:55.489  INFO 9872 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 9872 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:04:55.491  INFO 9872 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:04:55.544  INFO 9872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:04:55.544  INFO 9872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:04:57.823  INFO 9872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:04:57.832  INFO 9872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:04:57.832  INFO 9872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:04:57.950  INFO 9872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:04:57.951  INFO 9872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2406 ms
+2022-06-22 14:04:58.763  WARN 9872 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:04:58.774  WARN 9872 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:04:58.833  WARN 9872 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:04:58.862  WARN 9872 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:04:58.893  WARN 9872 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:04:59.087  INFO 9872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:04:59.301  INFO 9872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:04:59.332  INFO 9872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:04:59.342  INFO 9872 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.317 seconds (JVM running for 5.442)
+2022-06-22 14:04:59.610  INFO 9872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:04:59.610  INFO 9872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:04:59.611  INFO 9872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:04:59.649  INFO 9872 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:04:59.905  INFO 9872 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:06:23.065  WARN 9872 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m23s45ms951µs200ns).
+2022-06-22 14:06:23.070  WARN 9872 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArrayIndexOutOfBoundsException: 1]
+2022-06-22 14:06:23.446  INFO 9872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:06:23.457  INFO 9872 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:07:16.561  INFO 29772 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 29772 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:07:16.563  INFO 29772 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:07:16.650  INFO 29772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:07:16.650  INFO 29772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:07:19.322  INFO 29772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:07:19.333  INFO 29772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:07:19.334  INFO 29772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:07:19.418  INFO 29772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:07:19.418  INFO 29772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2767 ms
+2022-06-22 14:07:20.358  WARN 29772 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:07:20.372  WARN 29772 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:07:20.433  WARN 29772 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:07:20.471  WARN 29772 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:07:20.507  WARN 29772 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:07:20.724  INFO 29772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:07:20.953  INFO 29772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:07:20.985  INFO 29772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:07:20.995  INFO 29772 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.381 seconds (JVM running for 6.758)
+2022-06-22 14:07:30.780  INFO 29772 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:07:30.780  INFO 29772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:07:30.781  INFO 29772 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:07:30.815  INFO 29772 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:07:31.034  INFO 29772 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:07:55.248  INFO 29772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:07:55.279  INFO 29772 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:08:01.612  INFO 28812 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 28812 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:08:01.614  INFO 28812 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:08:01.704  INFO 28812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:08:01.705  INFO 28812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:08:04.795  INFO 28812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:08:04.804  INFO 28812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:08:04.804  INFO 28812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:08:04.901  INFO 28812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:08:04.901  INFO 28812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3195 ms
+2022-06-22 14:08:05.802  WARN 28812 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:08:05.813  WARN 28812 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:08:05.872  WARN 28812 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:08:05.904  WARN 28812 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:08:05.938  WARN 28812 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:08:06.151  INFO 28812 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:08:06.388  INFO 28812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:08:06.419  INFO 28812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:08:06.429  INFO 28812 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.508 seconds (JVM running for 7.071)
+2022-06-22 14:08:06.524  INFO 28812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:08:06.525  INFO 28812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:08:06.526  INFO 28812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:08:06.567  INFO 28812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:08:06.844  INFO 28812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:08:55.239  WARN 28812 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s281ms961µs700ns).
+2022-06-22 14:08:55.634  INFO 28812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:08:55.641  INFO 28812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:26:59.923  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:26:59.925  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:26:59.984  INFO 13288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:26:59.984  INFO 13288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:27:02.981  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:27:02.988  INFO 13288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:27:02.988  INFO 13288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:27:03.080  INFO 13288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:27:03.081  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3096 ms
+2022-06-22 14:27:03.980  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:27:03.990  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:27:04.043  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:27:04.075  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:27:04.109  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:27:04.309  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:27:04.544  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:27:04.578  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:27:04.590  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.32 seconds (JVM running for 7.503)
+2022-06-22 14:27:08.715  INFO 13288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:27:08.715  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:27:08.716  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:27:08.748  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:27:08.941  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:27:09.826  WARN 13288 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495187401670657,<EOL>'国家拟禁' at line 3<EOL><EOL>### The error may exist in com/mapper/hotNewsMapper.java (best guess)<EOL><EOL>### The error may involve com.mapper.hotNewsMapper.insert-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO hot_news  ( id, title, rank, hot_count, url, gmt_create )  VALUES  ( ?, ?, ?, ?, ?, ? )<EOL><EOL>### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495187401670657,<EOL>'国家拟禁' at line 3<EOL>; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495187401670657,<EOL>'国家拟禁' at line 3]
+2022-06-22 14:27:11.961  WARN 13288 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495196570419202,<EOL>'国家拟禁' at line 3<EOL><EOL>### The error may exist in com/mapper/hotNewsMapper.java (best guess)<EOL><EOL>### The error may involve com.mapper.hotNewsMapper.insert-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: INSERT INTO hot_news  ( id, title, rank, hot_count, url, gmt_create )  VALUES  ( ?, ?, ?, ?, ?, ? )<EOL><EOL>### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495196570419202,<EOL>'国家拟禁' at line 3<EOL>; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'rank,<EOL>hot_count,<EOL>url,<EOL>gmt_create )  VALUES  ( 1539495196570419202,<EOL>'国家拟禁' at line 3]
+2022-06-22 14:32:51.113  INFO 13288 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:32:51.127  INFO 13288 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:32:51.337  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:32:51.338  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:32:54.417  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:32:54.418  INFO 13288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:32:54.418  INFO 13288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:32:54.452  INFO 13288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:32:54.452  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3111 ms
+2022-06-22 14:32:54.953  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:32:54.956  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:32:54.984  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:32:55.011  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:32:55.048  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:32:55.137  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:32:55.200  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:32:55.213  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:32:55.219  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 3.92 seconds (JVM running for 358.131)
+2022-06-22 14:32:55.221  INFO 13288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 14:32:57.211  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:32:57.211  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:32:58.897  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:32:58.898  INFO 13288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:32:58.898  INFO 13288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:32:58.918  INFO 13288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:32:58.918  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1705 ms
+2022-06-22 14:32:59.309  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:32:59.312  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:32:59.336  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:32:59.357  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:32:59.390  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:32:59.461  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:32:59.514  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:32:59.525  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:32:59.529  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.341 seconds (JVM running for 362.441)
+2022-06-22 14:32:59.531  INFO 13288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 14:33:00.639  INFO 13288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:33:00.640  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:33:00.641  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:33:00.642  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-22 14:33:00.661  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-22 14:33:00.913  WARN 13288 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: Column count doesn't match value count at row 1<EOL><EOL>### The error may exist in com/mapper/hotNewsMapper.java (best guess)<EOL><EOL>### The error may involve com.mapper.hotNewsMapper.setHotsList-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: insert into hotnews values (?,?,?,?,?)<EOL><EOL>### Cause: java.sql.SQLException: Column count doesn't match value count at row 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: Column count doesn't match value count at row 1]
+2022-06-22 14:33:04.341  WARN 13288 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL><EOL>### Error querying database.  Cause: java.sql.SQLException: Column count doesn't match value count at row 1<EOL><EOL>### The error may exist in com/mapper/hotNewsMapper.java (best guess)<EOL><EOL>### The error may involve com.mapper.hotNewsMapper.setHotsList-Inline<EOL><EOL>### The error occurred while setting parameters<EOL><EOL>### SQL: insert into hotnews values (?,?,?,?,?)<EOL><EOL>### Cause: java.sql.SQLException: Column count doesn't match value count at row 1<EOL>; bad SQL grammar []; nested exception is java.sql.SQLException: Column count doesn't match value count at row 1]
+2022-06-22 14:34:37.882  INFO 13288 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-06-22 14:34:37.890  INFO 13288 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-06-22 14:34:38.207  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:34:38.207  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:34:40.959  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:34:40.959  INFO 13288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:34:40.960  INFO 13288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:34:40.986  INFO 13288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:34:40.986  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2776 ms
+2022-06-22 14:34:41.773  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:34:41.776  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:34:41.805  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:34:41.837  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:34:41.877  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:34:41.976  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:34:42.044  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:34:42.063  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:34:42.069  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 3.894 seconds (JVM running for 464.981)
+2022-06-22 14:34:42.071  INFO 13288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 14:34:42.651  INFO 13288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:34:42.652  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:34:42.654  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-22 14:34:42.656  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-22 14:34:42.680  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-22 14:34:44.242  INFO 13288 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-06-22 14:34:44.247  INFO 13288 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-06-22 14:34:44.415  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:34:44.415  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:34:45.888  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:34:45.888  INFO 13288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:34:45.888  INFO 13288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:34:45.904  INFO 13288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:34:45.904  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1487 ms
+2022-06-22 14:34:46.237  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:34:46.239  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:34:46.254  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:34:46.271  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:34:46.292  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:34:46.352  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:34:46.390  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:34:46.398  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:34:46.403  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.01 seconds (JVM running for 469.315)
+2022-06-22 14:34:46.404  INFO 13288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 14:34:46.499  INFO 13288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:34:46.500  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:34:46.501  INFO 13288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-06-22 14:34:56.515  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-06-22 14:34:56.532  INFO 13288 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-06-22 14:38:34.068  INFO 13288 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-06-22 14:38:34.076  INFO 13288 --- [Thread-33] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-06-22 14:38:34.331  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 13288 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:38:34.332  INFO 13288 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:38:36.549  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:38:36.572  INFO 13288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2235 ms
+2022-06-22 14:38:36.998  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:38:37.001  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:38:37.019  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:38:37.037  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:38:37.061  WARN 13288 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:38:37.120  INFO 13288 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:38:37.162  INFO 13288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:38:37.171  INFO 13288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:38:37.175  INFO 13288 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 2.913 seconds (JVM running for 700.087)
+2022-06-22 14:38:37.177  INFO 13288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-22 14:38:42.089  INFO 4568 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 4568 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:38:42.091  INFO 4568 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:38:42.170  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:38:42.171  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:38:46.268  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:38:46.278  INFO 4568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:38:46.278  INFO 4568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:38:46.394  INFO 4568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:38:46.394  INFO 4568 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4222 ms
+2022-06-22 14:38:47.388  WARN 4568 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:38:47.400  WARN 4568 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:38:47.464  WARN 4568 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:38:47.501  WARN 4568 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:38:47.539  WARN 4568 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:38:47.795  INFO 4568 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:38:48.060  INFO 4568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:38:48.098  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:38:48.109  INFO 4568 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 6.916 seconds (JVM running for 9.668)
+2022-06-22 14:38:51.674  INFO 4568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:38:51.675  INFO 4568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:38:51.676  INFO 4568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:38:51.715  INFO 4568 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:38:51.951  INFO 4568 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:39:38.558  WARN 4568 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s491ms411µs900ns).
+2022-06-22 14:44:27.601  INFO 4568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:44:27.608  INFO 4568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:44:32.696  INFO 19192 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 19192 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:44:32.697  INFO 19192 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:44:32.746  INFO 19192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:44:32.746  INFO 19192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:44:35.706  INFO 19192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:44:35.714  INFO 19192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:44:35.715  INFO 19192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:44:35.807  INFO 19192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:44:35.807  INFO 19192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3060 ms
+2022-06-22 14:44:36.804  WARN 19192 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:44:36.816  WARN 19192 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:44:36.876  WARN 19192 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:44:36.915  WARN 19192 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:44:36.956  WARN 19192 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:44:37.182  INFO 19192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:44:37.410  INFO 19192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:44:37.442  INFO 19192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:44:37.451  INFO 19192 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 5.188 seconds (JVM running for 6.439)
+2022-06-22 14:44:42.138  INFO 19192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:44:42.138  INFO 19192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:44:42.139  INFO 19192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:44:42.167  INFO 19192 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:44:42.364  INFO 19192 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 14:49:39.480  INFO 19192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 14:49:39.488  INFO 19192 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-22 14:49:47.145  INFO 29420 --- [restartedMain] com.CommunityApplication                 : Starting CommunityApplication using Java 1.8.0_322 on 樊川 with PID 29420 (D:\community\target\classes started by 樊川 in D:\community)
+2022-06-22 14:49:47.148  INFO 29420 --- [restartedMain] com.CommunityApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-06-22 14:49:47.231  INFO 29420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-22 14:49:47.231  INFO 29420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-22 14:49:49.709  INFO 29420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-22 14:49:49.716  INFO 29420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-22 14:49:49.716  INFO 29420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-22 14:49:49.782  INFO 29420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-22 14:49:49.782  INFO 29420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2550 ms
+2022-06-22 14:49:50.567  WARN 29420 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:49:50.576  WARN 29420 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.userMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:49:50.623  WARN 29420 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.commentMapper.insert] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Insert]
+2022-06-22 14:49:50.652  WARN 29420 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.questionMapper.update] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Update]
+2022-06-22 14:49:50.683  WARN 29420 --- [restartedMain] c.b.m.core.injector.AbstractMethod       : [com.mapper.notificationMapper.selectById] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.SelectById]
+2022-06-22 14:49:50.866  INFO 29420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-06-22 14:49:51.059  INFO 29420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-22 14:49:51.087  INFO 29420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 14:49:51.096  INFO 29420 --- [restartedMain] com.CommunityApplication                 : Started CommunityApplication in 4.754 seconds (JVM running for 6.231)
+2022-06-22 14:49:56.170  INFO 29420 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-22 14:49:56.170  INFO 29420 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-22 14:49:56.171  INFO 29420 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-22 14:49:56.206  INFO 29420 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-22 14:49:56.397  INFO 29420 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-22 15:18:43.830  INFO 29420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-22 15:18:43.835  INFO 29420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
