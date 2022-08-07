@@ -12,8 +12,8 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
-public class redisConfig {
-    private Logger logger = LoggerFactory.getLogger(redisConfig.class);
+public class jedisConfig {
+    private final Logger logger = LoggerFactory.getLogger(jedisConfig.class);
 
     @Value("${spring.redis.host}")
     private String host;
@@ -23,6 +23,7 @@ public class redisConfig {
 
     @Value("${spring.redis.password}")
     private String password;
+
     @Value("${spring.redis.timeout}")
     private int timeout;
 

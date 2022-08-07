@@ -9,7 +9,6 @@ import com.exception.ErrorCode;
 import com.mapper.questionMapper;
 import com.service.questionService;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

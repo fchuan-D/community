@@ -24,6 +24,6 @@ public class hotNewsService {
         for (hotNews hotNew : hotNews) {
             hotNewsMapper.setHotsList(hotNew);
         }
-        return  hotNews;
+        return hotNews;
     }
 }

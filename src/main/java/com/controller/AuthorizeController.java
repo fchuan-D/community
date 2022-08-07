@@ -12,6 +12,8 @@ import com.provider.githubService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
@@ -25,29 +27,35 @@ public class AuthorizeController {
     private userMapper userMapper;
     @Resource
     private githubService githubService;
+    @Resource
+    private JedisPool jedisPool;
 
     @GetMapping("/callback")
     public String callBack(@RequestParam(name = "code") String code,
                            @RequestParam(name = "state") String state,
-                            HttpServletResponse response){
+                            HttpServletResponse response,
+                            HttpServletRequest request){
         accessToken accessToken=new accessToken();
         accessToken.setCode(code);
         accessToken.setState(state);
 
-        String Token = githubService.getAccessToken(accessToken);
-        GithubUser githubUser = githubService.getUser(Token);
-
+        String GitToken = githubService.getGitToken(accessToken);
+        GithubUser githubUser = githubService.getUser(GitToken);
+        //在连接池中得到Jedis连接
+        Jedis jedis = jedisPool.getResource();
         if(githubUser.getId()!=null) {
             User user = new User();
             // 生成token
             String userToken = UUID.randomUUID().toString();
+            jedis.sadd("token",userToken);
+            jedis.expire("token",60*60*3);
             user.setName(githubUser.getName());
             user.setToken(userToken);
             user.setAccountId(String.valueOf(githubUser.getId()));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtModified(user.getGmtCreate());
             user.setAvatarUrl(githubUser.getAvatarUrl());
-
+            // 有历史登陆记录
             if (userMapper.findByAccountId(githubUser.getId()) != null) {
                 userMapper.update(user);
                 // 发送token给浏览器
@@ -63,8 +71,10 @@ public class AuthorizeController {
                 userMapper.insert(user);
                 // 发送token给浏览器
                 response.addCookie(new Cookie("token", userToken));
+                jedis.close();
             }
         }else{
+            jedis.close();
             // 登录失败
             throw new CustomizeException(ErrorCode.LOGIN_FAIL);
         }

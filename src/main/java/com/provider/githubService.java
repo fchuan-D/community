@@ -24,7 +24,7 @@ public class githubService {
     @Value("${github.redirect.uri}")
     private String redirectUri;
 
-    public String getAccessToken(accessToken accessToken) {
+    public String getGitToken(accessToken accessToken) {
         accessToken.setClient_id(clientId);
         accessToken.setClient_secret(clientSecret);
         accessToken.setRedirect_uri(redirectUri);

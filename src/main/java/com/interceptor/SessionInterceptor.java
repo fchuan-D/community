@@ -8,17 +8,21 @@ import com.service.NotificationService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Service
 public class SessionInterceptor implements HandlerInterceptor {
     @Resource
     userMapper userMapper;
-
+    @Resource
+    private JedisPool jedisPool;
     @Resource
     NotificationService notificationService;
 
