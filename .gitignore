@@ -7,8 +7,8 @@ target/
 ###忽略配置文件 日志 静态资源库 ###
 .properties
 .yaml
-/logs
-/static
+/logs/
+/src/main/resources/static/css/
 
 ### STS ###
 .apt_generated
