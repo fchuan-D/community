@@ -30,20 +30,20 @@ public class PublishController {
      */
     @GetMapping("/publish/{id}")
     public String edit(@PathVariable(name = "id") Long id,
-                       Model model){
+                       Model model) {
         Question question = questionMapper.getById(id);
-        model.addAttribute("title",question.getTitle());
-        model.addAttribute("description",question.getDescription());
-        model.addAttribute("tag",question.getTag());
-        model.addAttribute("tags",TagCache.get());
-        model.addAttribute("id",question.getId());
+        model.addAttribute("title", question.getTitle());
+        model.addAttribute("description", question.getDescription());
+        model.addAttribute("tag", question.getTag());
+        model.addAttribute("tags", TagCache.get());
+        model.addAttribute("id", question.getId());
 
         return "publish";
     }
 
     @GetMapping("/publish")
-    public String publish(Model model){
-        model.addAttribute("tags",TagCache.get());
+    public String publish(Model model) {
+        model.addAttribute("tags", TagCache.get());
         return "publish";
     }
 
@@ -52,22 +52,22 @@ public class PublishController {
      */
     @PostMapping("/publish")
     public String doPublish(
-            @RequestParam("title")String title,
-            @RequestParam("description")String description,
-            @RequestParam("tag")String tag,
-            @RequestParam(value = "id",required = false)Long id,
+            @RequestParam("title") String title,
+            @RequestParam("description") String description,
+            @RequestParam("tag") String tag,
+            @RequestParam(value = "id", required = false) Long id,
             HttpServletRequest request,
-            Model model){
+            Model model) {
         User user = (User) request.getSession().getAttribute("user");
-        model.addAttribute("tags",TagCache.get());
-        if (user == null){
-            model.addAttribute("error","用户未登录");
+        model.addAttribute("tags", TagCache.get());
+        if (user == null) {
+            model.addAttribute("error", "用户未登录");
             return "publish";
         }
         // 已填写内容回显
-        model.addAttribute("title",title);
-        model.addAttribute("description",description);
-        model.addAttribute("tag",tag);
+        model.addAttribute("title", title);
+        model.addAttribute("description", description);
+        model.addAttribute("tag", tag);
 
         String invalid = TagCache.filterInvalid(tag);
 
@@ -91,10 +91,6 @@ public class PublishController {
             model.addAttribute("error", "输入非法标签:" + invalid);
             return "publish";
         }
-        if (user == null) {
-            model.addAttribute("error", "用户未登录");
-            return "publish";
-        }
 //        if (user.getDisable() != null && user.getDisable() == 1) {
 //            model.addAttribute("error", "操作被禁用，如有疑问请联系管理员");
 //            return "publish";
@@ -103,7 +99,7 @@ public class PublishController {
 //            model.addAttribute("error", "操作太快，请求被限制");
 //            return "publish";
 //        }
-        Question question=new Question();
+        Question question = new Question();
 
         question.setTitle(title);
         question.setTag(tag);

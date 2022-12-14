@@ -1,28 +1,78 @@
-#spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://124.221.147.9:3306/community
-#    username: root
-#    password: password
-#
-#  thymeleaf:
-#    cache: false
-#    check-template: true
-#    check-template-location: true
-#    servlet.content-type: text/html
-#    encoding: utf-8
-#    mode: HTML
-#    prefix: classpath:/templates/
-#    suffix: .html
-#
-#  devtools:
-#    restart:
-#      enabled: true  #设置开启热部署
-#      additional-paths: src/main/java #重启目录
-#      exclude: WEB-INF/static/**
-#
-#  freemarker:
-#    cache: false    #页面不加载缓存，修改即时生效
-
-
-
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 15552000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/community
+    username: root
+    password: password
+  redis:
+    port: 6379
+    host: 124.221.147.9
+    password: dx595749
+    jedis.pool.max-idle: 6
+    jedis.pool.max-active: 10
+    jedis.pool.min-idle: 2
+    timeout: 2000
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  thymeleaf:
+    cache: false
+    check-template: true
+    check-template-location: true
+    servlet.content-type: text/html
+    encoding: utf-8
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/static/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.mapper
+# Github OAuth配置
+github:
+  client:
+    id: 97837cb52c1228e8321c
+    secret: 559c3720c9563fa88f275b1dd1ae981781b1c8d3
+  redirect:
+    uri: http://localhost:8080/callback
+# Gitee OAuth配置
+gitee:
+  client:
+    id: 6227bd840ae8ebe58578aea764b11d700b8bdbbd974df8a54d1f780f90d65069
+    secret: 3465e67cd12664f53f39e7a477bb053394ba0d39cd19d9d6d773afb013a793fb
+  redirect:
+    uri: http://124.221.147.9:8080/callback
+# 腾讯云存储配置
+qcloud:
+  qfile:
+    SecretId: AKID0vb1A2ez3qNdcKlwqTpuiETR9bmgKhnc
+    SecretKey: Zsue9KFtNgkY6UcU6SZPzJODl23oJXbR
+    bucketName: community-1304870863
+    region: ap-nanjing
+#随机数生成
+random: ${random.int(1,10)}
+# 日志配置
+logging:
+  file:
+    name: logs/community.log
+  level:
+    root: info
+    com:
+      mapper: error
+  logback:
+    rollingpolicy:
+      max-history: 30
+      max-file-size: 300MB

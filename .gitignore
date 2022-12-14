@@ -1,14 +1,14 @@
 HELP.md
 target/
+src/test/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
 ###忽略配置文件 日志 静态资源库 ###
-.properties
 .yaml
 /logs/
-/src/main/resources/static/css/
+/src/main/resources/
 
 ### STS ###
 .apt_generated

@@ -8,28 +8,23 @@ import com.service.NotificationService;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @Service
 public class SessionInterceptor implements HandlerInterceptor {
     @Resource
     userMapper userMapper;
     @Resource
-    private JedisPool jedisPool;
-    @Resource
     NotificationService notificationService;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         Cookie[] cookies = request.getCookies();
-        if (cookies!=null && cookies.length!=0) {
+        if (cookies != null && cookies.length != 0) {
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("token")) {
                     String token = cookie.getValue();
@@ -37,7 +32,7 @@ public class SessionInterceptor implements HandlerInterceptor {
                     if (user != null) {
                         request.getSession().setAttribute("user", user);
                         Long unreadCount = notificationService.getUnread(user.getId());
-                        request.getSession().setAttribute("unreadCount",unreadCount);
+                        request.getSession().setAttribute("unreadCount", unreadCount);
                     }
                     break;
                 }

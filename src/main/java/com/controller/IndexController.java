@@ -36,20 +36,15 @@ public class IndexController {
     private String random;
 
     @GetMapping("/")
-    public String index(
-                        HttpServletRequest request,
-                        @RequestParam(value = "page",defaultValue = "1")Integer page,
-                        @RequestParam(value = "size",defaultValue = "5")Integer size,
-                        @RequestParam(name = "search", required = false) String search,
-                        Model model){
-        if ((page-1)*size>questionMapper.count()){
+    public String index(HttpServletRequest request, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer size, @RequestParam(name = "search", required = false) String search, Model model) {
+        if ((page - 1) * size > questionMapper.count()) {
             throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
         }
         PaginationDTO pagination = questionService.getList(page, size);
         List<Question> hotQues = questionService.getHotList(5);
         model.addAttribute("hotQues", hotQues);
         model.addAttribute("search", search);
-        model.addAttribute("pagination",pagination);
+        model.addAttribute("pagination", pagination);
         request.getSession().setAttribute("redirectUri", redirectUri);
         request.getSession().setAttribute("clientId", clientId);
         request.getSession().setAttribute("random", random);
@@ -58,17 +53,13 @@ public class IndexController {
     }
 
     @GetMapping("/search")
-    public String getSearch(
-            @RequestParam(value = "page",defaultValue = "1")Integer page,
-            @RequestParam(value = "size",defaultValue = "5")Integer size,
-            @RequestParam(name = "search", required = false) String search,
-            Model model){
-        if ((page-1)*size>questionMapper.count()){
+    public String getSearch(@RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer size, @RequestParam(name = "search", required = false) String search, Model model) {
+        if ((page - 1) * size > questionMapper.count()) {
             throw new CustomizeException(ErrorCode.PAGE_NOT_FOUND);
         }
-        PaginationDTO pagination = questionService.getSearch(search,page, size);
-        model.addAttribute("search",search);
-        model.addAttribute("pagination",pagination);
+        PaginationDTO pagination = questionService.getSearch(search, page, size);
+        model.addAttribute("search", search);
+        model.addAttribute("pagination", pagination);
         return "index";
     }
 }
