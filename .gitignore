@@ -8,7 +8,7 @@ src/test/
 ###忽略配置文件 日志 静态资源库 ###
 .yaml
 /logs/
-/src/main/resources/
+/src/main/resources/**
 
 ### STS ###
 .apt_generated
